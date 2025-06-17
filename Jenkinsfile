@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git url: 'https://github.com/sajusam0809/AppiumParallelDevice.git', branch: 'main'
+                git url: 'https://github.com/sajusam0809/AppiumParallelExecution.git', branch: 'main'
             }
         }
 
