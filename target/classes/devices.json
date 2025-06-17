@@ -1,0 +1,20 @@
+[
+  {
+    "deviceName": "Nokia",
+    "udid": "CTLID18120801016",
+    "platformName": "Android",
+    "platformVersion": "11.0",
+    "appPackage": "com.androidsample.generalstore",
+    "appActivity": "com.androidsample.generalstore.SplashActivity",
+    "systemPort": 8200
+  },
+  {
+    "deviceName": "Samsung_Galaxy_S21",
+    "udid": "R3CRC00KHBT",
+    "platformName": "Android",
+    "platformVersion": "10.0",
+    "appPackage": "com.androidsample.generalstore",
+    "appActivity": "com.androidsample.generalstore.SplashActivity",
+    "systemPort": 8201
+  }
+]

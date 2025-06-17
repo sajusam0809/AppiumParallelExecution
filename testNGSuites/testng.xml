@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="AppiumParallelSuite" parallel="tests" thread-count="2">
+    <listeners>
+        <listener class-name="org.appium.Listeners.TestListener" />
+    </listeners>
+    <test name="TestOnDevice1">
+        <parameter name="deviceIndex" value="0" />
+        <classes>
+            <class name="org.testCase.TestCase1"/>
+            <class name="org.testCase.TestCase2"/>
+        </classes>
+
+    </test>
+    <test name="TestOnDevice2">
+        <parameter name="deviceIndex" value="1" />
+        <classes>
+            <class name="org.testCase.TestCase1"/>
+            <class name="org.testCase.TestCase2"/>
+        </classes>
+    </test>
+
+  <!--  <test name="TestOnDevice2">
+        <parameter name="deviceIndex" value="1" />
+        <classes>
+            <class name="org.testCase.TestCase2"/>
+        </classes>
+    </test>-->
+</suite>
