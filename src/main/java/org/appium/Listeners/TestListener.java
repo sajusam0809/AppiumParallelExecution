@@ -79,7 +79,7 @@ public class TestListener implements ITestListener, IInvokedMethodListener {
         AndroidDriver driver = ((BaseTest) result.getInstance()).driver;
         String methodName = result.getMethod().getMethodName();
         String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        File screenshotFile = new File("screenshots", methodName + "_" + timestamp + ".png");
+        File screenshotFile = new File("test-output/media", methodName + "_" + timestamp + ".png");
 
         try {
             byte[] screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
@@ -87,7 +87,7 @@ public class TestListener implements ITestListener, IInvokedMethodListener {
             try (FileOutputStream fos = new FileOutputStream(screenshotFile)) {
                 fos.write(screenshotBytes);
             }
-            return screenshotFile.getAbsolutePath();
+            return "media/" + screenshotFile.getName();
         } catch (Exception e) {
             e.printStackTrace();
             return null;
