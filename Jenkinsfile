@@ -15,8 +15,22 @@ pipeline {
 
         stage('Run Tests') {
             steps {
-                bat 'mvn clean test --DsuiteXmlFile=testng.xml'
+                bat 'mvn clean test -DsuiteXmlFile=testng.xml'
             }
+        }
+    }
+
+    post {
+        always {
+            // ✅ Publish Extent HTML report (with styles & screenshots)
+            publishHTML(target: [
+                allowMissing: false,
+                alwaysLinkToLastBuild: true,
+                keepAll: true,
+                reportDir: 'test-output',
+                reportFiles: 'ExtentReport.html',
+                reportName: 'Extent Test Report'
+            ])
         }
     }
 }
