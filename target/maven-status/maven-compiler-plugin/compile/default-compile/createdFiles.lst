@@ -6,6 +6,7 @@ org\appium\TestUtils\JsonUtils$1.class
 org\appium\TestUtils\JsonUtils.class
 org\appium\utilis\AppiumServerManager.class
 org\appium\TestUtils\BaseTest.class
+org\appium\utilis\DriverActions.class
 org\appium\TestUtils\JsonUtils$2.class
 org\appium\pageObjects\android\ProductCatalog.class
 org\appium\TestUtils\ExtentReportManager.class

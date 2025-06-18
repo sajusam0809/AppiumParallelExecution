@@ -35,59 +35,81 @@ public class TestListener implements ITestListener, IInvokedMethodListener {
     public void onTestSuccess(ITestResult result) {
         passedCount++;
         String path = captureScreenshot(result);
-        ExtentReportManager.getTest().log(Status.PASS, "✅ Test Passed")
-                .addScreenCaptureFromPath(path);
+        if (path != null) {
+            ExtentReportManager.getTest()
+                    .log(Status.PASS, "✅ Test Passed")
+                    .addScreenCaptureFromPath(path);
+        } else {
+            ExtentReportManager.getTest().log(Status.PASS, "✅ Test Passed (screenshot not available)");
+        }
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
         failedCount++;
         String path = captureScreenshot(result);
-        ExtentReportManager.getTest().log(Status.FAIL, "❌ Test Failed: " + result.getThrowable())
-                .addScreenCaptureFromPath(path);
+        if (path != null) {
+            ExtentReportManager.getTest()
+                    .log(Status.FAIL, "❌ Test Failed: " + result.getThrowable())
+                    .addScreenCaptureFromPath(path);
+        } else {
+            ExtentReportManager.getTest().log(Status.FAIL, "❌ Test Failed (screenshot not available): " + result.getThrowable());
+        }
     }
 
     @Override
     public void onTestSkipped(ITestResult result) {
         skippedCount++;
-        ExtentReportManager.getTest().log(Status.SKIP, "⚠️ Test Skipped");
+        String path = captureScreenshot(result);
+        if (path != null) {
+            ExtentReportManager.getTest()
+                    .log(Status.SKIP, "⚠️ Test Skipped")
+                    .addScreenCaptureFromPath(path);
+        } else {
+            ExtentReportManager.getTest().log(Status.SKIP, "⚠️ Test Skipped (screenshot not available)");
+        }
     }
 
     @Override
     public void onFinish(ITestContext context) {
-        int totalCount = passedCount + failedCount + skippedCount;
+        int total = passedCount + failedCount + skippedCount;
 
-        // Print test summary to console
         System.out.println("\n📊 Test Summary:");
         System.out.println("✔  Passed:  " + passedCount);
         System.out.println("✖  Failed:  " + failedCount);
         System.out.println("➖ Skipped: " + skippedCount);
-        System.out.println("Σ  Total:   " + totalCount);
+        System.out.println("Σ  Total:   " + total);
 
-        // Log summary in Extent Report
         ExtentReportManager.getExtent()
                 .createTest("📊 Test Summary")
                 .info("✔  Passed:  " + passedCount)
                 .info("✖  Failed:  " + failedCount)
                 .info("➖ Skipped: " + skippedCount)
-                .info("Σ  Total:   " + totalCount);
+                .info("Σ  Total:   " + total);
 
         ExtentReportManager.flush();
     }
 
     private String captureScreenshot(ITestResult result) {
-        AndroidDriver driver = ((BaseTest) result.getInstance()).driver;
-        String methodName = result.getMethod().getMethodName();
-        String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
-        File screenshotFile = new File("test-output/media", methodName + "_" + timestamp + ".png");
-
         try {
+            AndroidDriver driver = ((BaseTest) result.getInstance()).driver;
+            if (driver == null) return null;
+
+            String methodName = result.getMethod().getMethodName();
+            String timestamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+            String screenshotDir = "test-output/media/";
+            File destFile = new File(screenshotDir + methodName + "_" + timestamp + ".png");
+
+            destFile.getParentFile().mkdirs();
             byte[] screenshotBytes = ((TakesScreenshot) driver).getScreenshotAs(OutputType.BYTES);
-            screenshotFile.getParentFile().mkdirs();
-            try (FileOutputStream fos = new FileOutputStream(screenshotFile)) {
+
+            try (FileOutputStream fos = new FileOutputStream(destFile)) {
                 fos.write(screenshotBytes);
             }
-            return "media/" + screenshotFile.getName();
+
+            // Return relative path for ExtentReport embedding
+            return "media/" + destFile.getName();
+
         } catch (Exception e) {
             e.printStackTrace();
             return null;

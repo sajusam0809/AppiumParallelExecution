@@ -2,15 +2,21 @@ package org.appium.pageObjects.android;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.android.AndroidDriver;
+import org.appium.utilis.DriverActions;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.PageFactory;
 
 public class HomePage {
 
     private AndroidDriver driver;
+    private DriverActions actions;
 
     // Constructor
     public HomePage(AndroidDriver driver) {
         this.driver = driver;
+        this.actions = new DriverActions(driver);
+        PageFactory.initElements(driver, this);
     }
 
     // Locators
@@ -22,26 +28,31 @@ public class HomePage {
 
     // Actions
     public void enterName(String name) {
-        driver.findElement(nameField).sendKeys(name);
+        WebElement field = driver.findElement(nameField);
+        actions.sendKeys(field, name, "Name field");
         driver.hideKeyboard();
     }
 
     public void selectFemaleGender() {
-        driver.findElement(radioFemale).click();
+        actions.click(driver.findElement(radioFemale), "Female radio button");
     }
 
     public void selectMaleGender() {
-        driver.findElement(radioMale).click();
+        actions.click(driver.findElement(radioMale), "Male radio button");
     }
 
     public void selectCountry(String countryName) {
-        driver.findElement(countryDropdown).click();
-        driver.findElement(AppiumBy.androidUIAutomator(
-                "new UiScrollable(new UiSelector()).scrollIntoView(text(\"" + countryName + "\"));"));
-        driver.findElement(By.xpath("//android.widget.TextView[@text='" + countryName + "']")).click();
+        actions.click(driver.findElement(countryDropdown), "Country dropdown");
+
+        // Scroll to country
+        String uiSelector = "new UiScrollable(new UiSelector()).scrollIntoView(text(\"" + countryName + "\"));";
+        driver.findElement(AppiumBy.androidUIAutomator(uiSelector));
+
+        WebElement countryElement = driver.findElement(By.xpath("//android.widget.TextView[@text='" + countryName + "']"));
+        actions.click(countryElement, "Country: " + countryName);
     }
 
     public void clickLetsShop() {
-        driver.findElement(letsShopButton).click();
+        actions.click(driver.findElement(letsShopButton), "Let's Shop button");
     }
 }
