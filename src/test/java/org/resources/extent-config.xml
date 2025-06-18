@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<extentreports>
+    <configuration>
+        <encoding>UTF-8</encoding>
+        <documentTitle>My Custom Browser Title</documentTitle>
+        <reportName>My Custom Report Title</reportName>
+        <reportHeadline>A small headline</reportHeadline>
+        <status>
+            <passColor>#4CAF50</passColor> <!-- Green -->
+            <failColor>#F44336</failColor> <!-- Red -->
+            <skipColor>#FF9800</skipColor> <!-- Orange -->
+        </status>
+    </configuration>
+</extentreports>

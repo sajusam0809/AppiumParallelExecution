@@ -21,15 +21,13 @@ public class ExtentReportManager {
     public static void initReport() {
         if (extent == null) {
             ExtentSparkReporter spark = new ExtentSparkReporter("test-output/ExtentReport.html");
-            spark.config().setTheme(Theme.STANDARD);
-            spark.config().setDocumentTitle("Appium Test Report");
-            spark.config().setReportName("Parallel Execution");
 
+            spark.config().setTheme(Theme.STANDARD);
+            spark.config().setDocumentTitle("📱 Appium Test Report");
+            spark.config().setReportName("🚀 Parallel Execution Results");
 
             // Add CSS to resize screenshots globally
-            String css = ".test-content img { max-width: 400px; height: auto !important; }";
-            spark.config().setCss(css);
-
+            spark.config().setCss(".test-content img { max-width: 500px; height: auto; border-radius: 8px; }");
             extent = new ExtentReports();
             extent.attachReporter(spark);
         }

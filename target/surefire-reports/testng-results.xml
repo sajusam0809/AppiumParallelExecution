@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-18T12:02:57 EDT" name="AppiumParallelSuite" finished-at="2025-06-18T12:03:19 EDT" duration-ms="21283">
+  <suite started-at="2025-06-18T12:19:53 EDT" name="AppiumParallelSuite" finished-at="2025-06-18T12:20:15 EDT" duration-ms="22111">
     <groups>
     </groups>
-    <test started-at="2025-06-18T12:02:57 EDT" name="TestOnDevice1" finished-at="2025-06-18T12:03:19 EDT" duration-ms="21283">
+    <test started-at="2025-06-18T12:19:53 EDT" name="TestOnDevice1" finished-at="2025-06-18T12:20:15 EDT" duration-ms="22111">
       <class name="org.testCase.TestCase1">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase1@78e4deb0]" started-at="2025-06-18T12:02:58 EDT" name="setUp" finished-at="2025-06-18T12:03:08 EDT" duration-ms="10574" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase1@78e4deb0]" started-at="2025-06-18T12:19:53 EDT" name="setUp" finished-at="2025-06-18T12:20:04 EDT" duration-ms="11405" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,11 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="FirstCase()[pri:0, instance:org.testCase.TestCase1@78e4deb0]" started-at="2025-06-18T12:03:08 EDT" name="FirstCase" finished-at="2025-06-18T12:03:16 EDT" duration-ms="8051" status="PASS">
+        <test-method signature="FirstCase()[pri:0, instance:org.testCase.TestCase1@78e4deb0]" started-at="2025-06-18T12:20:04 EDT" name="FirstCase" finished-at="2025-06-18T12:20:12 EDT" duration-ms="8059" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FirstCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase1@78e4deb0]" started-at="2025-06-18T12:03:17 EDT" name="tearDown" finished-at="2025-06-18T12:03:19 EDT" duration-ms="1288" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase1@78e4deb0]" started-at="2025-06-18T12:20:14 EDT" name="tearDown" finished-at="2025-06-18T12:20:15 EDT" duration-ms="1276" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
