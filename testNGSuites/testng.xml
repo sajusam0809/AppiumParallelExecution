@@ -3,7 +3,7 @@
     <listeners>
         <listener class-name="org.appium.Listeners.TestListener" />
     </listeners>
-    <test name="TestOnDevice1">
+<!--    <test name="TestOnDevice1">
         <parameter name="deviceIndex" value="0" />
         <classes>
             <class name="org.testCase.TestCase1"/>
@@ -17,12 +17,18 @@
             <class name="org.testCase.TestCase1"/>
             <class name="org.testCase.TestCase2"/>
         </classes>
-    </test>
-
-  <!--  <test name="TestOnDevice2">
-        <parameter name="deviceIndex" value="1" />
-        <classes>
-            <class name="org.testCase.TestCase2"/>
-        </classes>
     </test>-->
+
+    <test name="TestOnDevice1">
+        <parameter name="deviceIndex" value="0" />
+        <classes>
+            <class name="org.testCase.TestCase3"/>
+        </classes>
+    </test>
+     <test name="TestOnDevice2">
+       <parameter name="deviceIndex" value="1" />
+       <classes>
+           <class name="org.testCase.TestCase3"/>
+       </classes>
+   </test>
 </suite>
