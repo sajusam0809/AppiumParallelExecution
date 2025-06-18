@@ -25,6 +25,11 @@ public class ExtentReportManager {
             spark.config().setDocumentTitle("Appium Test Report");
             spark.config().setReportName("Parallel Execution");
 
+
+            // Add CSS to resize screenshots globally
+            String css = ".test-content img { max-width: 400px; height: auto !important; }";
+            spark.config().setCss(css);
+
             extent = new ExtentReports();
             extent.attachReporter(spark);
         }
