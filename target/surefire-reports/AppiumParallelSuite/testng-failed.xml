@@ -4,6 +4,19 @@
   <listeners>
     <listener class-name="org.appium.Listeners.TestListener"/>
   </listeners>
+  <test thread-count="2" parallel="tests" name="TestOnDevice2(failed)" verbose="0">
+    <parameter name="deviceIndex" value="1"/>
+    <parameter name="formDataIndex" value="1"/>
+    <classes>
+      <class name="org.testCase.TestCase1">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="FirstCase"/>
+        </methods>
+      </class> <!-- org.testCase.TestCase1 -->
+    </classes>
+  </test> <!-- TestOnDevice2(failed) -->
   <test thread-count="2" parallel="tests" name="TestOnDevice1(failed)" verbose="0">
     <parameter name="deviceIndex" value="0"/>
     <parameter name="formDataIndex" value="0"/>

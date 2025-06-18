@@ -26,4 +26,7 @@ public class DriverActions {
         ExtentReportManager.logInfoWithScreenshot(driver, "Got text from " + description + ": " + text);
         return text;
     }
+    public void captureStep(String message) {
+        ExtentReportManager.logInfoWithScreenshot(driver, message);
+    }
 }

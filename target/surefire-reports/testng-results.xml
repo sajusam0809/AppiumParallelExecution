@@ -1,169 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-18T01:00:18 EDT" name="AppiumParallelSuite" finished-at="2025-06-18T01:01:32 EDT" duration-ms="73766">
+  <suite started-at="2025-06-18T12:02:57 EDT" name="AppiumParallelSuite" finished-at="2025-06-18T12:03:19 EDT" duration-ms="21283">
     <groups>
     </groups>
-    <test started-at="2025-06-18T01:00:18 EDT" name="TestOnDevice2" finished-at="2025-06-18T01:01:28 EDT" duration-ms="69274">
+    <test started-at="2025-06-18T12:02:57 EDT" name="TestOnDevice1" finished-at="2025-06-18T12:03:19 EDT" duration-ms="21283">
       <class name="org.testCase.TestCase1">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase1@5032714f]" started-at="2025-06-18T01:00:19 EDT" name="setUp" finished-at="2025-06-18T01:00:29 EDT" duration-ms="10022" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase1@78e4deb0]" started-at="2025-06-18T12:02:58 EDT" name="setUp" finished-at="2025-06-18T12:03:08 EDT" duration-ms="10574" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[1]]>
+                <![CDATA[0]]>
               </value>
             </param>
             <param index="1">
               <value>
-                <![CDATA[1]]>
+                <![CDATA[0]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="FirstCase()[pri:0, instance:org.testCase.TestCase1@5032714f]" started-at="2025-06-18T01:00:29 EDT" name="FirstCase" finished-at="2025-06-18T01:00:35 EDT" duration-ms="6043" status="PASS">
+        <test-method signature="FirstCase()[pri:0, instance:org.testCase.TestCase1@78e4deb0]" started-at="2025-06-18T12:03:08 EDT" name="FirstCase" finished-at="2025-06-18T12:03:16 EDT" duration-ms="8051" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FirstCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase1@5032714f]" started-at="2025-06-18T01:00:35 EDT" name="tearDown" finished-at="2025-06-18T01:00:37 EDT" duration-ms="1470" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase1@78e4deb0]" started-at="2025-06-18T12:03:17 EDT" name="tearDown" finished-at="2025-06-18T12:03:19 EDT" duration-ms="1288" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.testCase.TestCase1 -->
-      <class name="org.testCase.TestCase3">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase3@353352b6]" started-at="2025-06-18T01:01:01 EDT" name="setUp" finished-at="2025-06-18T01:01:08 EDT" duration-ms="7064" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="ThirdCase()[pri:0, instance:org.testCase.TestCase3@353352b6]" started-at="2025-06-18T01:01:08 EDT" name="ThirdCase" finished-at="2025-06-18T01:01:26 EDT" duration-ms="17562" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ThirdCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase3@353352b6]" started-at="2025-06-18T01:01:26 EDT" name="tearDown" finished-at="2025-06-18T01:01:28 EDT" duration-ms="1446" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- org.testCase.TestCase3 -->
-      <class name="org.testCase.TestCase2">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase2@48bb62]" started-at="2025-06-18T01:00:37 EDT" name="setUp" finished-at="2025-06-18T01:00:44 EDT" duration-ms="6831" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[1]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="SecondCase()[pri:0, instance:org.testCase.TestCase2@48bb62]" started-at="2025-06-18T01:00:44 EDT" name="SecondCase" finished-at="2025-06-18T01:00:59 EDT" duration-ms="15665" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SecondCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase2@48bb62]" started-at="2025-06-18T01:01:00 EDT" name="tearDown" finished-at="2025-06-18T01:01:01 EDT" duration-ms="1318" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- org.testCase.TestCase2 -->
-    </test> <!-- TestOnDevice2 -->
-    <test started-at="2025-06-18T01:00:18 EDT" name="TestOnDevice1" finished-at="2025-06-18T01:01:32 EDT" duration-ms="73766">
-      <class name="org.testCase.TestCase1">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase1@4b741d6d]" started-at="2025-06-18T01:00:19 EDT" name="setUp" finished-at="2025-06-18T01:00:29 EDT" duration-ms="10678" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="FirstCase()[pri:0, instance:org.testCase.TestCase1@4b741d6d]" started-at="2025-06-18T01:00:29 EDT" name="FirstCase" finished-at="2025-06-18T01:00:35 EDT" duration-ms="5843" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- FirstCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase1@4b741d6d]" started-at="2025-06-18T01:00:36 EDT" name="tearDown" finished-at="2025-06-18T01:00:38 EDT" duration-ms="1386" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- org.testCase.TestCase1 -->
-      <class name="org.testCase.TestCase3">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase3@173ed316]" started-at="2025-06-18T01:01:03 EDT" name="setUp" finished-at="2025-06-18T01:01:11 EDT" duration-ms="8056" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="ThirdCase()[pri:0, instance:org.testCase.TestCase3@173ed316]" started-at="2025-06-18T01:01:11 EDT" name="ThirdCase" finished-at="2025-06-18T01:01:30 EDT" duration-ms="19283" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- ThirdCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase3@173ed316]" started-at="2025-06-18T01:01:31 EDT" name="tearDown" finished-at="2025-06-18T01:01:32 EDT" duration-ms="1266" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- org.testCase.TestCase3 -->
-      <class name="org.testCase.TestCase2">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase2@69e153c5]" started-at="2025-06-18T01:00:38 EDT" name="setUp" finished-at="2025-06-18T01:00:45 EDT" duration-ms="7850" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[0]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="SecondCase()[pri:0, instance:org.testCase.TestCase2@69e153c5]" started-at="2025-06-18T01:00:45 EDT" name="SecondCase" finished-at="2025-06-18T01:01:01 EDT" duration-ms="15140" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- SecondCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase2@69e153c5]" started-at="2025-06-18T01:01:01 EDT" name="tearDown" finished-at="2025-06-18T01:01:03 EDT" duration-ms="1242" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- tearDown -->
-      </class> <!-- org.testCase.TestCase2 -->
     </test> <!-- TestOnDevice1 -->
   </suite> <!-- AppiumParallelSuite -->
 </testng-results>

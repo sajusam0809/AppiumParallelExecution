@@ -55,4 +55,12 @@ public class HomePage {
     public void clickLetsShop() {
         actions.click(driver.findElement(letsShopButton), "Let's Shop button");
     }
+
+    public String getToastMessage(String expectedText) {
+        // Toast is not a WebElement, but visible via XPath
+        String toastXPath = "//android.widget.Toast[@text='" + expectedText + "']";
+        String message = driver.findElement(AppiumBy.xpath(toastXPath)).getText();
+        actions.captureStep("Toast appeared with message: " + message);
+        return message;
+    }
 }
