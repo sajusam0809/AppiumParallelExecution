@@ -32,5 +32,8 @@ pipeline {
                reportFiles: 'ExtentReport.html',
                reportName: 'Extent Test Report'
            ])
+
+           // ✅ Publish Allure Report (requires Allure plugin installed in Jenkins)
+                       allure includeProperties: false, jdk: '', results: [[path: 'target/allure-results']]
        }
    }

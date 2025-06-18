@@ -3,6 +3,7 @@
 <suite thread-count="2" parallel="tests" name="Failed suite [AppiumParallelSuite]" guice-stage="DEVELOPMENT" verbose="0">
   <listeners>
     <listener class-name="org.appium.Listeners.TestListener"/>
+    <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
   </listeners>
   <test thread-count="2" parallel="tests" name="TestOnDevice2(failed)" verbose="0">
     <parameter name="deviceIndex" value="1"/>
@@ -24,8 +25,8 @@
       <class name="org.testCase.TestCase1">
         <methods>
           <include name="tearDown"/>
-          <include name="FirstCase"/>
           <include name="setUp"/>
+          <include name="FirstCase"/>
         </methods>
       </class> <!-- org.testCase.TestCase1 -->
     </classes>

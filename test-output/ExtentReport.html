@@ -35,7 +35,7 @@
 <a href="#"><span class="badge badge-primary">? Parallel Execution Results</span></a>
 </li>
 <li class="m-r-10">
-<a href="#"><span class="badge badge-primary">Jun. 18, 2025 12:57:11 p.m.</span></a>
+<a href="#"><span class="badge badge-primary">Jun. 18, 2025 04:27:25 p.m.</span></a>
 </li>
 </ul>
 </div>
@@ -67,6 +67,7 @@
 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
 <ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
 <a class="dropdown-item" status="pass" href="#"><span>Pass</span><span class="status success"></span></a>
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
 <div class="dropdown-divider"></div>
 <a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
 </ul>
@@ -74,40 +75,40 @@
 </ul>
 </div>    <div class="test-list-wrapper scrollable">
       <ul class="test-list-item">
-        <li class="test-item"  status="pass" test-id="1"
+        <li class="test-item"  status="fail" test-id="1"
           author=""
           tag=""
           device="">
           <div class="test-detail">
-            <p class="name">FirstCase - Device0</p>
+            <p class="name">FirstCase - Device1</p>
             <p class="text-sm">
-              <span>12:57:21 p.m.</span> / <span>00:00:09:359</span>
-              <span class="badge pass-bg log float-right">Pass</span>
+              <span>4:27:43 p.m.</span> / <span>00:00:08:813</span>
+              <span class="badge fail-bg log float-right">Fail</span>
             </p>
           </div>
           <div class="test-contents d-none">
 <div class="detail-head">
 <div class="p-v-10">
 <div class="info">
-<h5 class="test-status text-pass">FirstCase - Device0</h5>
-<span class='badge badge-success'>06.18.2025 12:57:21 p.m.</span>
-<span class='badge badge-danger'>06.18.2025 12:57:31 p.m.</span>
-<span class='badge badge-default'>00:00:09:359</span>
+<h5 class="test-status text-fail">FirstCase - Device1</h5>
+<span class='badge badge-success'>06.18.2025 4:27:43 p.m.</span>
+<span class='badge badge-danger'>06.18.2025 4:27:52 p.m.</span>
+<span class='badge badge-default'>00:00:08:813</span>
 &middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
 </div>
 </div>    <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='media/step_20250618_125727.png' src="media/step_20250618_125727.png">
+<img data-featherlight='media/step_20250618_162749.png' src="media/step_20250618_162749.png">
     
     </div></div>
     <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='media/step_20250618_125728.png' src="media/step_20250618_125728.png">
+<img data-featherlight='media/step_20250618_162751.png' src="media/step_20250618_162751.png">
     
     </div></div>
     <div class="row mb-3"><div class="col-md-3">
-<img data-featherlight='media/FirstCase_20250618_125730.png' src="media/FirstCase_20250618_125730.png">
+<img data-featherlight='media/FirstCase_20250618_162751.png' src="media/FirstCase_20250618_162751.png">
     
     </div></div>
 <div class="detail-body mt-4">
@@ -116,21 +117,131 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:57:28 p.m.</td>
+        <td>4:27:50 p.m.</td>
         <td>
           Clicked: Let's Shop button
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:57:30 p.m.</td>
+        <td>4:27:51 p.m.</td>
         <td>
           Toast appeared with message: Please enter your name
         </td>
       </tr>
       <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:27:52 p.m.</td>
+        <td>
+          ? Test Failed: java.lang.AssertionError: expected [Please enter your name2] but found [Please enter your name]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="2"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">FirstCase - Device0</p>
+            <p class="text-sm">
+              <span>4:27:43 p.m.</span> / <span>00:00:11:443</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">FirstCase - Device0</h5>
+<span class='badge badge-success'>06.18.2025 4:27:43 p.m.</span>
+<span class='badge badge-danger'>06.18.2025 4:27:55 p.m.</span>
+<span class='badge badge-default'>00:00:11:443</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='media/step_20250618_162750.png' src="media/step_20250618_162750.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='media/step_20250618_162752.png' src="media/step_20250618_162752.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='media/FirstCase_20250618_162754.png' src="media/FirstCase_20250618_162754.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:27:51 p.m.</td>
+        <td>
+          Clicked: Let's Shop button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:27:54 p.m.</td>
+        <td>
+          Toast appeared with message: Please enter your name
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log fail-bg">Fail</span></td>
+        <td>4:27:55 p.m.</td>
+        <td>
+          ? Test Failed: java.lang.AssertionError: expected [Please enter your name2] but found [Please enter your name]
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="3"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">SecondCase - Device1</p>
+            <p class="text-sm">
+              <span>4:28:04 p.m.</span> / <span>00:00:15:964</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">SecondCase - Device1</h5>
+<span class='badge badge-success'>06.18.2025 4:28:04 p.m.</span>
+<span class='badge badge-danger'>06.18.2025 4:28:20 p.m.</span>
+<span class='badge badge-default'>00:00:15:964</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=3</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='media/SecondCase_20250618_162819.png' src="media/SecondCase_20250618_162819.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
         <td><span class="badge log pass-bg">Pass</span></td>
-        <td>12:57:31 p.m.</td>
+        <td>4:28:20 p.m.</td>
         <td>
           ? Test Passed
         </td>
@@ -140,14 +251,256 @@
 </div>
           </div>
         </li>
-        <li class="test-item"  status="pass" test-id="2"
+        <li class="test-item"  status="pass" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">SecondCase - Device0</p>
+            <p class="text-sm">
+              <span>4:28:06 p.m.</span> / <span>00:00:17:078</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">SecondCase - Device0</h5>
+<span class='badge badge-success'>06.18.2025 4:28:06 p.m.</span>
+<span class='badge badge-danger'>06.18.2025 4:28:24 p.m.</span>
+<span class='badge badge-default'>00:00:17:078</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='media/SecondCase_20250618_162823.png' src="media/SecondCase_20250618_162823.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:28:24 p.m.</td>
+        <td>
+          ? Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="5"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">ThirdCase - Device1</p>
+            <p class="text-sm">
+              <span>4:28:33 p.m.</span> / <span>00:00:19:646</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">ThirdCase - Device1</h5>
+<span class='badge badge-success'>06.18.2025 4:28:33 p.m.</span>
+<span class='badge badge-danger'>06.18.2025 4:28:53 p.m.</span>
+<span class='badge badge-default'>00:00:19:646</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=5</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='media/step_20250618_162839.png' src="media/step_20250618_162839.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='media/step_20250618_162841.png' src="media/step_20250618_162841.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='media/step_20250618_162842.png' src="media/step_20250618_162842.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='media/step_20250618_162848.png' src="media/step_20250618_162848.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='media/step_20250618_162849.png' src="media/step_20250618_162849.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='media/ThirdCase_20250618_162853.png' src="media/ThirdCase_20250618_162853.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:28:40 p.m.</td>
+        <td>
+          Typed 'gogan' into: Name field
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:28:41 p.m.</td>
+        <td>
+          Clicked: Male radio button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:28:43 p.m.</td>
+        <td>
+          Clicked: Country dropdown
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:28:48 p.m.</td>
+        <td>
+          Clicked: Country: Argentina
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:28:50 p.m.</td>
+        <td>
+          Clicked: Let's Shop button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:28:53 p.m.</td>
+        <td>
+          ? Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="6"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">ThirdCase - Device0</p>
+            <p class="text-sm">
+              <span>4:28:35 p.m.</span> / <span>00:00:25:399</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">ThirdCase - Device0</h5>
+<span class='badge badge-success'>06.18.2025 4:28:35 p.m.</span>
+<span class='badge badge-danger'>06.18.2025 4:29:01 p.m.</span>
+<span class='badge badge-default'>00:00:25:399</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=6</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div>    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='media/step_20250618_162842.png' src="media/step_20250618_162842.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='media/step_20250618_162845.png' src="media/step_20250618_162845.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='media/step_20250618_162847.png' src="media/step_20250618_162847.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='media/step_20250618_162854.png' src="media/step_20250618_162854.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='media/step_20250618_162856.png' src="media/step_20250618_162856.png">
+    
+    </div></div>
+    <div class="row mb-3"><div class="col-md-3">
+<img data-featherlight='media/ThirdCase_20250618_162900.png' src="media/ThirdCase_20250618_162900.png">
+    
+    </div></div>
+<div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:28:43 p.m.</td>
+        <td>
+          Typed 'danny' into: Name field
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:28:46 p.m.</td>
+        <td>
+          Clicked: Female radio button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:28:48 p.m.</td>
+        <td>
+          Clicked: Country dropdown
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:28:55 p.m.</td>
+        <td>
+          Clicked: Country: Argentina
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:28:57 p.m.</td>
+        <td>
+          Clicked: Let's Shop button
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log pass-bg">Pass</span></td>
+        <td>4:29:01 p.m.</td>
+        <td>
+          ? Test Passed
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="7"
           author=""
           tag=""
           device="">
           <div class="test-detail">
             <p class="name">? Test Summary</p>
             <p class="text-sm">
-              <span>12:57:32 p.m.</span> / <span>00:00:00:000</span>
+              <span>4:28:55 p.m.</span> / <span>00:00:00:001</span>
               <span class="badge pass-bg log float-right">Pass</span>
             </p>
           </div>
@@ -156,10 +509,10 @@
 <div class="p-v-10">
 <div class="info">
 <h5 class="test-status text-pass">? Test Summary</h5>
-<span class='badge badge-success'>06.18.2025 12:57:32 p.m.</span>
-<span class='badge badge-danger'>06.18.2025 12:57:32 p.m.</span>
-<span class='badge badge-default'>00:00:00:000</span>
-&middot; <span class='uri-anchor badge badge-default'>#test-id=2</span>
+<span class='badge badge-success'>06.18.2025 4:28:55 p.m.</span>
+<span class='badge badge-danger'>06.18.2025 4:28:55 p.m.</span>
+<span class='badge badge-default'>00:00:00:001</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
 <span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
 <span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
 </div>
@@ -170,30 +523,91 @@
   <tbody>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:57:32 p.m.</td>
+        <td>4:28:55 p.m.</td>
         <td>
-          ?  Passed:  1
+          ?  Passed:  3
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:57:32 p.m.</td>
+        <td>4:28:55 p.m.</td>
         <td>
-          ?  Failed:  0
+          ?  Failed:  2
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:57:32 p.m.</td>
+        <td>4:28:55 p.m.</td>
         <td>
           ??  Skipped: 0
         </td>
       </tr>
       <tr class="event-row">
         <td><span class="badge log info-bg">Info</span></td>
-        <td>12:57:32 p.m.</td>
+        <td>4:28:55 p.m.</td>
         <td>
-          ?    Total:   1
+          ?    Total:   5
+        </td>
+      </tr>
+  </tbody>
+</table>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="pass" test-id="8"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">? Test Summary</p>
+            <p class="text-sm">
+              <span>4:29:02 p.m.</span> / <span>00:00:00:000</span>
+              <span class="badge pass-bg log float-right">Pass</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-pass">? Test Summary</h5>
+<span class='badge badge-success'>06.18.2025 4:29:02 p.m.</span>
+<span class='badge badge-danger'>06.18.2025 4:29:02 p.m.</span>
+<span class='badge badge-default'>00:00:00:000</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=8</span>
+<span class='badge badge-default pointer float-right ml-1 et'><i class="fa fa-chevron-down"></i></span>
+<span class='badge badge-default pointer float-right ct'><i class="fa fa-chevron-up"></i></span>
+</div>
+</div>
+</div><div class="detail-body mt-4">
+<table class="table table-sm">
+  <thead><tr><th class="status-col">Status</th><th class="timestamp-col">Timestamp</th><th class="details-col">Details</th></tr></thead>
+  <tbody>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:29:02 p.m.</td>
+        <td>
+          ?  Passed:  4
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:29:02 p.m.</td>
+        <td>
+          ?  Failed:  2
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:29:02 p.m.</td>
+        <td>
+          ??  Skipped: 0
+        </td>
+      </tr>
+      <tr class="event-row">
+        <td><span class="badge log info-bg">Info</span></td>
+        <td>4:29:02 p.m.</td>
+        <td>
+          ?    Total:   6
         </td>
       </tr>
   </tbody>
@@ -215,25 +629,25 @@
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Started</p>
-<h3>Jun. 18, 2025 12:57:11 p.m.</h3>
+<h3>Jun. 18, 2025 04:27:25 p.m.</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0">Ended</p>
-<h3>Jun. 18, 2025 12:57:32 p.m.</h3>
+<h3>Jun. 18, 2025 04:29:02 p.m.</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-pass">Tests Passed</p>
-<h3>2</h3>
+<h3>6</h3>
 </div></div>
 </div>
 <div class="col-md-3">
 <div class="card"><div class="card-body">
 <p class="m-b-0 text-fail">Tests Failed</p>
-<h3>0</h3>
+<h3>2</h3>
 </div></div>
 </div>
 </div>
@@ -249,12 +663,12 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='100%'>
-<b>2</b> tests passed
+<div><small data-tooltip='75%'>
+<b>6</b> tests passed
 </small>
 </div>
 <div>
-<small data-tooltip='0%'><b>0</b> tests failed,
+<small data-tooltip='25%'><b>2</b> tests failed,
 <b>0</b> skipped, <b data-tooltip='0%'>0</b> others
 </small>
 </div>
@@ -272,10 +686,10 @@
 </div>
 </div>
 <div class="card-footer">
-<div><small data-tooltip='14%'><b>1</b> events passed</small></div>
+<div><small data-tooltip='14%'><b>4</b> events passed</small></div>
 <div>
-<small data-tooltip='0%'><b>0</b> events failed,
-<b data-tooltip='%'>6</b> others
+<small data-tooltip='7%'><b>2</b> events failed,
+<b data-tooltip='%'>22</b> others
 </small>
 </div>
 </div>
@@ -291,7 +705,7 @@
 </div></div>
 <script>
 var timeline = {
-"FirstCase - Device0":9.359,"? Test Summary":0
+"FirstCase - Device1":8.813,"FirstCase - Device0":11.443,"SecondCase - Device1":15.964,"SecondCase - Device0":17.078,"ThirdCase - Device1":19.646,"ThirdCase - Device0":25.399,"? Test Summary":0.001,"? Test Summary":0
 };
 </script>
 <div class="row">
@@ -300,8 +714,8 @@ var timeline = {
 <script>
 var statusGroup = {
 parentCount: 5,
-passParent: 2,
-failParent: 0,
+passParent: 6,
+failParent: 2,
 warningParent: 0,
 skipParent: 0,
 childCount: 5,
@@ -317,11 +731,11 @@ warningGrandChild: 0,
 skipGrandChild: 0,
 infoGrandChild: 0,
 eventsCount: 5,
-passEvents: 1,
-failEvents: 0,
+passEvents: 4,
+failEvents: 2,
 warningEvents: 0,
 skipEvents: 0,
-infoEvents: 6
+infoEvents: 22
 };
 </script>        </div>
       </div>

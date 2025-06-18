@@ -9,10 +9,32 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">AppiumParallelSuite</th></tr>
-<tr><td><a href="#t0">TestOnDevice1</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">21,487</td><td></td><td></td></tr>
+<tr><td><a href="#t0">TestOnDevice2</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">89,724</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TestOnDevice1</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">97,279</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">187,003</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">AppiumParallelSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestOnDevice1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.testCase.TestCase1</td><td><a href="#m0">FirstCase</a></td><td rowspan="1">1750265841890</td><td rowspan="1">8242</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">AppiumParallelSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestOnDevice2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">org.testCase.TestCase1</td><td><a href="#m0">FirstCase</a></td><td rowspan="1">1750278463528</td><td rowspan="1">8355</td></tr><tr><th colspan="4">TestOnDevice2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.testCase.TestCase2</td><td><a href="#m1">SecondCase</a></td><td rowspan="1">1750278484708</td><td rowspan="1">15223</td></tr><tr class="passedodd"><td rowspan="1">org.testCase.TestCase3</td><td><a href="#m2">ThirdCase</a></td><td rowspan="1">1750278513809</td><td rowspan="1">19238</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TestOnDevice1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">org.testCase.TestCase1</td><td><a href="#m3">FirstCase</a></td><td rowspan="1">1750278463528</td><td rowspan="1">10504</td></tr><tr><th colspan="4">TestOnDevice1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.testCase.TestCase2</td><td><a href="#m4">SecondCase</a></td><td rowspan="1">1750278486951</td><td rowspan="1">16215</td></tr><tr class="passedodd"><td rowspan="1">org.testCase.TestCase3</td><td><a href="#m5">ThirdCase</a></td><td rowspan="1">1750278515766</td><td rowspan="1">24591</td></tr></tbody>
 </table>
-<h2>TestOnDevice1</h2><h3 id="m0">org.testCase.TestCase1#FirstCase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestOnDevice2</h2><h3 id="m0">org.testCase.TestCase1#FirstCase</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Please enter your name2] but found [Please enter your name]
+	at org.testCase.TestCase1.FirstCase(TestCase1.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">org.testCase.TestCase2#SecondCase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">org.testCase.TestCase3#ThirdCase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestOnDevice1</h2><h3 id="m3">org.testCase.TestCase1#FirstCase</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Please enter your name2] but found [Please enter your name]
+	at org.testCase.TestCase1.FirstCase(TestCase1.java:25)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">org.testCase.TestCase2#SecondCase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">org.testCase.TestCase3#ThirdCase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

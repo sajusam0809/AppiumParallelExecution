@@ -1,13 +1,131 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-18T12:57:11 EDT" name="AppiumParallelSuite" finished-at="2025-06-18T12:57:32 EDT" duration-ms="21487">
+  <suite started-at="2025-06-18T16:27:25 EDT" name="AppiumParallelSuite" finished-at="2025-06-18T16:29:02 EDT" duration-ms="97279">
     <groups>
     </groups>
-    <test started-at="2025-06-18T12:57:11 EDT" name="TestOnDevice1" finished-at="2025-06-18T12:57:32 EDT" duration-ms="21487">
+    <test started-at="2025-06-18T16:27:25 EDT" name="TestOnDevice2" finished-at="2025-06-18T16:28:55 EDT" duration-ms="89724">
       <class name="org.testCase.TestCase1">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase1@78e4deb0]" started-at="2025-06-18T12:57:11 EDT" name="setUp" finished-at="2025-06-18T12:57:21 EDT" duration-ms="10517" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase1@7a8136b3]" started-at="2025-06-18T16:27:26 EDT" name="setUp" finished-at="2025-06-18T16:27:43 EDT" duration-ms="16881" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="FirstCase()[pri:0, instance:org.testCase.TestCase1@7a8136b3]" started-at="2025-06-18T16:27:43 EDT" name="FirstCase" finished-at="2025-06-18T16:27:51 EDT" duration-ms="8355" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Please enter your name2] but found [Please enter your name]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Please enter your name2] but found [Please enter your name]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at org.testCase.TestCase1.FirstCase(TestCase1.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- FirstCase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase1@7a8136b3]" started-at="2025-06-18T16:27:52 EDT" name="tearDown" finished-at="2025-06-18T16:27:54 EDT" duration-ms="1752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.testCase.TestCase1 -->
+      <class name="org.testCase.TestCase3">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase3@14dc3f89]" started-at="2025-06-18T16:28:22 EDT" name="setUp" finished-at="2025-06-18T16:28:33 EDT" duration-ms="10904" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ThirdCase()[pri:0, instance:org.testCase.TestCase3@14dc3f89]" started-at="2025-06-18T16:28:33 EDT" name="ThirdCase" finished-at="2025-06-18T16:28:53 EDT" duration-ms="19238" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ThirdCase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase3@14dc3f89]" started-at="2025-06-18T16:28:53 EDT" name="tearDown" finished-at="2025-06-18T16:28:55 EDT" duration-ms="1840" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.testCase.TestCase3 -->
+      <class name="org.testCase.TestCase2">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase2@1de6932a]" started-at="2025-06-18T16:27:54 EDT" name="setUp" finished-at="2025-06-18T16:28:04 EDT" duration-ms="10321" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SecondCase()[pri:0, instance:org.testCase.TestCase2@1de6932a]" started-at="2025-06-18T16:28:04 EDT" name="SecondCase" finished-at="2025-06-18T16:28:19 EDT" duration-ms="15223" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SecondCase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase2@1de6932a]" started-at="2025-06-18T16:28:20 EDT" name="tearDown" finished-at="2025-06-18T16:28:22 EDT" duration-ms="2166" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.testCase.TestCase2 -->
+    </test> <!-- TestOnDevice2 -->
+    <test started-at="2025-06-18T16:27:25 EDT" name="TestOnDevice1" finished-at="2025-06-18T16:29:02 EDT" duration-ms="97279">
+      <class name="org.testCase.TestCase1">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase1@5b498842]" started-at="2025-06-18T16:27:26 EDT" name="setUp" finished-at="2025-06-18T16:27:43 EDT" duration-ms="16881" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,15 +141,105 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="FirstCase()[pri:0, instance:org.testCase.TestCase1@78e4deb0]" started-at="2025-06-18T12:57:21 EDT" name="FirstCase" finished-at="2025-06-18T12:57:30 EDT" duration-ms="8242" status="PASS">
+        <test-method signature="FirstCase()[pri:0, instance:org.testCase.TestCase1@5b498842]" started-at="2025-06-18T16:27:43 EDT" name="FirstCase" finished-at="2025-06-18T16:27:54 EDT" duration-ms="10504" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Please enter your name2] but found [Please enter your name]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Please enter your name2] but found [Please enter your name]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at org.testCase.TestCase1.FirstCase(TestCase1.java:25)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FirstCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase1@78e4deb0]" started-at="2025-06-18T12:57:31 EDT" name="tearDown" finished-at="2025-06-18T12:57:32 EDT" duration-ms="1311" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase1@5b498842]" started-at="2025-06-18T16:27:55 EDT" name="tearDown" finished-at="2025-06-18T16:27:56 EDT" duration-ms="1649" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.testCase.TestCase1 -->
+      <class name="org.testCase.TestCase3">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase3@62ce72ff]" started-at="2025-06-18T16:28:25 EDT" name="setUp" finished-at="2025-06-18T16:28:35 EDT" duration-ms="10082" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="ThirdCase()[pri:0, instance:org.testCase.TestCase3@62ce72ff]" started-at="2025-06-18T16:28:35 EDT" name="ThirdCase" finished-at="2025-06-18T16:29:00 EDT" duration-ms="24591" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ThirdCase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase3@62ce72ff]" started-at="2025-06-18T16:29:01 EDT" name="tearDown" finished-at="2025-06-18T16:29:02 EDT" duration-ms="1686" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.testCase.TestCase3 -->
+      <class name="org.testCase.TestCase2">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase2@2bef09c0]" started-at="2025-06-18T16:27:56 EDT" name="setUp" finished-at="2025-06-18T16:28:06 EDT" duration-ms="10191" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SecondCase()[pri:0, instance:org.testCase.TestCase2@2bef09c0]" started-at="2025-06-18T16:28:06 EDT" name="SecondCase" finished-at="2025-06-18T16:28:23 EDT" duration-ms="16215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- SecondCase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase2@2bef09c0]" started-at="2025-06-18T16:28:24 EDT" name="tearDown" finished-at="2025-06-18T16:28:25 EDT" duration-ms="1645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.testCase.TestCase2 -->
     </test> <!-- TestOnDevice1 -->
   </suite> <!-- AppiumParallelSuite -->
 </testng-results>

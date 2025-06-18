@@ -2,18 +2,20 @@
 <suite name="AppiumParallelSuite" parallel="tests" thread-count="2">
     <listeners>
         <listener class-name="org.appium.Listeners.TestListener" />
+        <listener class-name="io.qameta.allure.testng.AllureTestNg"/>
+
     </listeners>
     <test name="TestOnDevice1">
         <parameter name="deviceIndex" value="0"/>
         <parameter name="formDataIndex" value="0"/>
         <classes>
             <class name="org.testCase.TestCase1"/>
-        <!--    <class name="org.testCase.TestCase2"/>
-            <class name="org.testCase.TestCase3"/>-->
+            <class name="org.testCase.TestCase2"/>
+            <class name="org.testCase.TestCase3"/>
         </classes>
 
     </test>
-    <!--  <test name="TestOnDevice2">
+     <test name="TestOnDevice2">
          <parameter name="deviceIndex" value="1"/>
          <parameter name="formDataIndex" value="1"/>
          <classes>
@@ -21,7 +23,7 @@
             <class name="org.testCase.TestCase2"/>
              <class name="org.testCase.TestCase3"/>
         </classes>
-    </test>-->
+    </test>
 
  <!--   <test name="TestOnNokia">
         <parameter name="deviceIndex" value="0"/>
