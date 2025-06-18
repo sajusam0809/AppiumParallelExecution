@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">6 methods,   6 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -119,6 +119,16 @@
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-AppiumParallelSuite" title="org.testCase.TestCase2" class="method navigator-link" hash-for-method="SecondCase">SecondCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AppiumParallelSuite" title="org.testCase.TestCase3" class="method navigator-link" hash-for-method="ThirdCase">ThirdCase</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AppiumParallelSuite" title="org.testCase.TestCase3" class="method navigator-link" hash-for-method="ThirdCase">ThirdCase</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-AppiumParallelSuite -->
@@ -177,6 +187,28 @@
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-AppiumParallelSuite-class-passed -->
+          <div class="suite-AppiumParallelSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">org.testCase.TestCase3</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ThirdCase">
+                  </a> <!-- ThirdCase -->
+                  <span class="method-name">ThirdCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ThirdCase">
+                  </a> <!-- ThirdCase -->
+                  <span class="method-name">ThirdCase</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AppiumParallelSuite-class-passed -->
         </div> <!-- panel AppiumParallelSuite -->
         <div panel-name="test-xml-AppiumParallelSuite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -192,16 +224,20 @@
   &lt;/listeners&gt;
   &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;TestOnDevice1&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;deviceIndex&quot; value=&quot;0&quot;/&gt;
+    &lt;parameter name=&quot;formDataIndex&quot; value=&quot;0&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;org.testCase.TestCase1&quot;/&gt;
       &lt;class name=&quot;org.testCase.TestCase2&quot;/&gt;
+      &lt;class name=&quot;org.testCase.TestCase3&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestOnDevice1 --&gt;
   &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;TestOnDevice2&quot; verbose=&quot;0&quot;&gt;
     &lt;parameter name=&quot;deviceIndex&quot; value=&quot;1&quot;/&gt;
+    &lt;parameter name=&quot;formDataIndex&quot; value=&quot;1&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;org.testCase.TestCase1&quot;/&gt;
       &lt;class name=&quot;org.testCase.TestCase2&quot;/&gt;
+      &lt;class name=&quot;org.testCase.TestCase3&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- TestOnDevice2 --&gt;
 &lt;/suite&gt; &lt;!-- AppiumParallelSuite --&gt;
@@ -215,10 +251,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">TestOnDevice1 (2 classes)</span>
+                <span class="test-name">TestOnDevice1 (3 classes)</span>
               </li>
               <li>
-                <span class="test-name">TestOnDevice2 (2 classes)</span>
+                <span class="test-name">TestOnDevice2 (3 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -244,28 +280,36 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(6);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'SecondCase')
 data.setCell(0, 2, 'org.testCase.TestCase2')
-data.setCell(0, 3, 16770);
+data.setCell(0, 3, 15790);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'SecondCase')
-data.setCell(1, 2, 'org.testCase.TestCase2')
-data.setCell(1, 3, 15203);
+data.setCell(1, 1, 'ThirdCase')
+data.setCell(1, 2, 'org.testCase.TestCase3')
+data.setCell(1, 3, 15660);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'FirstCase')
-data.setCell(2, 2, 'org.testCase.TestCase1')
-data.setCell(2, 3, 5905);
+data.setCell(2, 1, 'ThirdCase')
+data.setCell(2, 2, 'org.testCase.TestCase3')
+data.setCell(2, 3, 15298);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'FirstCase')
-data.setCell(3, 2, 'org.testCase.TestCase1')
-data.setCell(3, 3, 5884);
+data.setCell(3, 1, 'SecondCase')
+data.setCell(3, 2, 'org.testCase.TestCase2')
+data.setCell(3, 3, 15190);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'FirstCase')
+data.setCell(4, 2, 'org.testCase.TestCase1')
+data.setCell(4, 3, 6050);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'FirstCase')
+data.setCell(5, 2, 'org.testCase.TestCase1')
+data.setCell(5, 3, 5841);
 window.suiteTableData['AppiumParallelSuite']= { tableData: data, tableDiv: 'times-div-AppiumParallelSuite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 45 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-AppiumParallelSuite">
               </div> <!-- times-div-AppiumParallelSuite -->
             </div> <!-- times-div -->
@@ -293,55 +337,82 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">org.testCase.TestCase1</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(0)</span>
+                <span class="method-name">setUp(0, 0)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(1)</span>
+                <span class="method-name">setUp(1, 1)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">FirstCase</span>
-                <span class="method-start">9693 ms</span>
+                <span class="method-start">10553 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">FirstCase</span>
-                <span class="method-start">10525 ms</span>
+                <span class="method-start">11134 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">16215 ms</span>
+                <span class="method-start">17250 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">17517 ms</span>
+                <span class="method-start">18086 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">org.testCase.TestCase2</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(1)</span>
-                <span class="method-start">17599 ms</span>
+                <span class="method-name">setUp(1, 1)</span>
+                <span class="method-start">18720 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-class before">
-                <span class="method-name">setUp(0)</span>
-                <span class="method-start">19419 ms</span>
+                <span class="method-name">setUp(0, 0)</span>
+                <span class="method-start">19391 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">SecondCase</span>
-                <span class="method-start">26050 ms</span>
+                <span class="method-start">26102 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">SecondCase</span>
-                <span class="method-start">28175 ms</span>
+                <span class="method-start">27202 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">43310 ms</span>
+                <span class="method-start">42353 ms</span>
               </div> <!-- configuration-class after -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">44198 ms</span>
+                <span class="method-start">43187 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.testCase.TestCase3</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(1, 1)</span>
+                <span class="method-start">43793 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-class before">
+                <span class="method-name">setUp(0, 0)</span>
+                <span class="method-start">44557 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">ThirdCase</span>
+                <span class="method-start">51244 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ThirdCase</span>
+                <span class="method-start">52572 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">67361 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">68678 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

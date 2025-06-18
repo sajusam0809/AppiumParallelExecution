@@ -1,11 +1,20 @@
+/*
 package org.appium.TestUtils;
 
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.ObjectMapper;
+
+import java.io.File;
 import java.util.List;
+import java.util.Map;
 
 public class DeviceManager {
-
-    public static List<Device> getDevices() {
-        return JsonUtils.readDevicesJson("/devices.json");
+    public static Map<String, Object> getDevice(int index) throws Exception {
+        ObjectMapper mapper = new ObjectMapper();
+        List<Map<String, Object>> devices = mapper.readValue(
+                new File(System.getProperty("user.dir") + "/src/main/resources/devices.json"),
+                new TypeReference<>() {});
+        return devices.get(index);
     }
 }
 
@@ -20,3 +29,4 @@ class Device {
 
     // getters and setters (optional)
 }
+*/

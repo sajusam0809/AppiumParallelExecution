@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-17T19:35:24 EDT" name="AppiumParallelSuite" finished-at="2025-06-17T19:36:10 EDT" duration-ms="45790">
+  <suite started-at="2025-06-17T23:40:25 EDT" name="AppiumParallelSuite" finished-at="2025-06-17T23:41:35 EDT" duration-ms="70257">
     <groups>
     </groups>
-    <test started-at="2025-06-17T19:35:24 EDT" name="TestOnDevice2" finished-at="2025-06-17T19:36:09 EDT" duration-ms="45091">
+    <test started-at="2025-06-17T23:40:25 EDT" name="TestOnDevice2" finished-at="2025-06-17T23:41:34 EDT" duration-ms="69198">
       <class name="org.testCase.TestCase1">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:org.testCase.TestCase1@353352b6]" started-at="2025-06-17T19:35:24 EDT" name="setUp" finished-at="2025-06-17T19:35:34 EDT" duration-ms="9681" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase1@48bb62]" started-at="2025-06-17T23:40:25 EDT" name="setUp" finished-at="2025-06-17T23:40:36 EDT" duration-ms="10545" status="PASS">
           <params>
             <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
               <value>
                 <![CDATA[1]]>
               </value>
@@ -18,19 +23,24 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="FirstCase()[pri:0, instance:org.testCase.TestCase1@353352b6]" started-at="2025-06-17T19:35:34 EDT" name="FirstCase" finished-at="2025-06-17T19:35:40 EDT" duration-ms="5884" status="PASS">
+        <test-method signature="FirstCase()[pri:0, instance:org.testCase.TestCase1@48bb62]" started-at="2025-06-17T23:40:36 EDT" name="FirstCase" finished-at="2025-06-17T23:40:42 EDT" duration-ms="6050" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FirstCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase1@353352b6]" started-at="2025-06-17T19:35:41 EDT" name="tearDown" finished-at="2025-06-17T19:35:42 EDT" duration-ms="1384" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase1@48bb62]" started-at="2025-06-17T23:40:43 EDT" name="tearDown" finished-at="2025-06-17T23:40:44 EDT" duration-ms="1470" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.testCase.TestCase1 -->
-      <class name="org.testCase.TestCase2">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:org.testCase.TestCase2@4681c175]" started-at="2025-06-17T19:35:42 EDT" name="setUp" finished-at="2025-06-17T19:35:51 EDT" duration-ms="8451" status="PASS">
+      <class name="org.testCase.TestCase3">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase3@4681c175]" started-at="2025-06-17T23:41:09 EDT" name="setUp" finished-at="2025-06-17T23:41:17 EDT" duration-ms="7451" status="PASS">
           <params>
             <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
               <value>
                 <![CDATA[1]]>
               </value>
@@ -39,21 +49,52 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="SecondCase()[pri:0, instance:org.testCase.TestCase2@4681c175]" started-at="2025-06-17T19:35:51 EDT" name="SecondCase" finished-at="2025-06-17T19:36:07 EDT" duration-ms="16770" status="PASS">
+        <test-method signature="ThirdCase()[pri:0, instance:org.testCase.TestCase3@4681c175]" started-at="2025-06-17T23:41:17 EDT" name="ThirdCase" finished-at="2025-06-17T23:41:32 EDT" duration-ms="15660" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ThirdCase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase3@4681c175]" started-at="2025-06-17T23:41:33 EDT" name="tearDown" finished-at="2025-06-17T23:41:34 EDT" duration-ms="1539" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.testCase.TestCase3 -->
+      <class name="org.testCase.TestCase2">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase2@353352b6]" started-at="2025-06-17T23:40:44 EDT" name="setUp" finished-at="2025-06-17T23:40:51 EDT" duration-ms="7381" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SecondCase()[pri:0, instance:org.testCase.TestCase2@353352b6]" started-at="2025-06-17T23:40:51 EDT" name="SecondCase" finished-at="2025-06-17T23:41:07 EDT" duration-ms="15790" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SecondCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase2@4681c175]" started-at="2025-06-17T19:36:08 EDT" name="tearDown" finished-at="2025-06-17T19:36:09 EDT" duration-ms="1438" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase2@353352b6]" started-at="2025-06-17T23:41:08 EDT" name="tearDown" finished-at="2025-06-17T23:41:09 EDT" duration-ms="1440" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.testCase.TestCase2 -->
     </test> <!-- TestOnDevice2 -->
-    <test started-at="2025-06-17T19:35:24 EDT" name="TestOnDevice1" finished-at="2025-06-17T19:36:10 EDT" duration-ms="45790">
+    <test started-at="2025-06-17T23:40:25 EDT" name="TestOnDevice1" finished-at="2025-06-17T23:41:35 EDT" duration-ms="70257">
       <class name="org.testCase.TestCase1">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:org.testCase.TestCase1@470734c3]" started-at="2025-06-17T19:35:24 EDT" name="setUp" finished-at="2025-06-17T19:35:35 EDT" duration-ms="10524" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase1@4b741d6d]" started-at="2025-06-17T23:40:25 EDT" name="setUp" finished-at="2025-06-17T23:40:36 EDT" duration-ms="11134" status="PASS">
           <params>
             <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
               <value>
                 <![CDATA[0]]>
               </value>
@@ -62,19 +103,24 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="FirstCase()[pri:0, instance:org.testCase.TestCase1@470734c3]" started-at="2025-06-17T19:35:35 EDT" name="FirstCase" finished-at="2025-06-17T19:35:41 EDT" duration-ms="5905" status="PASS">
+        <test-method signature="FirstCase()[pri:0, instance:org.testCase.TestCase1@4b741d6d]" started-at="2025-06-17T23:40:36 EDT" name="FirstCase" finished-at="2025-06-17T23:40:42 EDT" duration-ms="5841" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FirstCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase1@470734c3]" started-at="2025-06-17T19:35:42 EDT" name="tearDown" finished-at="2025-06-17T19:35:44 EDT" duration-ms="1902" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase1@4b741d6d]" started-at="2025-06-17T23:40:43 EDT" name="tearDown" finished-at="2025-06-17T23:40:45 EDT" duration-ms="1304" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.testCase.TestCase1 -->
-      <class name="org.testCase.TestCase2">
-        <test-method is-config="true" signature="setUp(java.lang.String)[pri:0, instance:org.testCase.TestCase2@74ea2410]" started-at="2025-06-17T19:35:44 EDT" name="setUp" finished-at="2025-06-17T19:35:53 EDT" duration-ms="8754" status="PASS">
+      <class name="org.testCase.TestCase3">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase3@173ed316]" started-at="2025-06-17T23:41:10 EDT" name="setUp" finished-at="2025-06-17T23:41:18 EDT" duration-ms="8014" status="PASS">
           <params>
             <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
               <value>
                 <![CDATA[0]]>
               </value>
@@ -83,11 +129,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="SecondCase()[pri:0, instance:org.testCase.TestCase2@74ea2410]" started-at="2025-06-17T19:35:53 EDT" name="SecondCase" finished-at="2025-06-17T19:36:08 EDT" duration-ms="15203" status="PASS">
+        <test-method signature="ThirdCase()[pri:0, instance:org.testCase.TestCase3@173ed316]" started-at="2025-06-17T23:41:18 EDT" name="ThirdCase" finished-at="2025-06-17T23:41:33 EDT" duration-ms="15298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ThirdCase -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase3@173ed316]" started-at="2025-06-17T23:41:34 EDT" name="tearDown" finished-at="2025-06-17T23:41:35 EDT" duration-ms="1284" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- org.testCase.TestCase3 -->
+      <class name="org.testCase.TestCase2">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase2@69e153c5]" started-at="2025-06-17T23:40:45 EDT" name="setUp" finished-at="2025-06-17T23:40:53 EDT" duration-ms="7811" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="SecondCase()[pri:0, instance:org.testCase.TestCase2@69e153c5]" started-at="2025-06-17T23:40:53 EDT" name="SecondCase" finished-at="2025-06-17T23:41:08 EDT" duration-ms="15190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SecondCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase2@74ea2410]" started-at="2025-06-17T19:36:09 EDT" name="tearDown" finished-at="2025-06-17T19:36:10 EDT" duration-ms="1252" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase2@69e153c5]" started-at="2025-06-17T23:41:09 EDT" name="tearDown" finished-at="2025-06-17T23:41:10 EDT" duration-ms="1370" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

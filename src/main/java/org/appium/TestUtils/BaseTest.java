@@ -4,48 +4,44 @@ import io.appium.java_client.android.AndroidDriver;
 import org.appium.utilis.AppiumServerManager;
 import org.appium.utilis.CapabilitiesManager;
 import org.appium.TestUtils.ExtentReportManager;
+//import org.appium.TestUtils.DeviceManager;
+//import org.appium.utilis.TestDataManager;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.testng.annotations.*;
 
-import java.io.File;
+import java.net.URL;
 import java.util.List;
 import java.util.Map;
-
-import com.fasterxml.jackson.core.type.TypeReference;
-import com.fasterxml.jackson.databind.ObjectMapper;
-
-import java.net.URL;
 
 public class BaseTest {
     public AndroidDriver driver;
     protected AppiumServerManager appiumServerManager;
     protected Map<String, Object> device;
+    protected FormData formData;
 
-    @Parameters({"deviceIndex"})
+    @Parameters({"deviceIndex", "formDataIndex"})
     @BeforeClass(alwaysRun = true)
-    public void setUp(@Optional("0") String deviceIndex) throws Exception {
-        // Initialize ExtentReports
+    public void setUp(@Optional("0") String deviceIndex, @Optional("0") String formDataIndex) throws Exception {
         ExtentReportManager.initReport();
 
-        // Load devices from JSON
-        ObjectMapper mapper = new ObjectMapper();
-        List<Map<String, Object>> devices = mapper.readValue(
-                new File(System.getProperty("user.dir") + "/src/main/resources/devices.json"),
-                new TypeReference<List<Map<String, Object>>>() {
-                });
+        int dIdx = Integer.parseInt(deviceIndex);
+        int fIdx = Integer.parseInt(formDataIndex);
 
-        int index = Integer.parseInt(deviceIndex);
-        device = devices.get(index);
+       /* device = DeviceManager.getDevice(dIdx);
+        formData = TestDataManager.getFormData(fIdx);*/
 
-        // Start Appium server
-        int port = 4723 + index;
+        List<Map<String, Object>> devices = JsonUtils.readDevicesJson("/devices.json");
+        device = devices.get(dIdx);
+
+        List<FormData> formDataList = JsonUtils.readFormDataJson("/eCommerce.json");
+        formData = formDataList.get(fIdx);
+
+        int port = 4723 + dIdx;
         appiumServerManager = new AppiumServerManager();
         appiumServerManager.startServer(port);
 
-        // Get Capabilities
-        DesiredCapabilities caps = CapabilitiesManager.getCapabilities(device);
 
-        // Initialize driver
+        DesiredCapabilities caps = CapabilitiesManager.getCapabilities(device);
         driver = new AndroidDriver(new URL("http://127.0.0.1:" + port + "/"), caps);
     }
 

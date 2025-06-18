@@ -1,12 +1,12 @@
 org\appium\pageObjects\android\FormPage.class
 org\appium\pageObjects\android\CartPage.class
-org\appium\TestUtils\Device.class
+org\appium\pageObjects\android\HomePage.class
+org\appium\TestUtils\FormData.class
 org\appium\TestUtils\JsonUtils$1.class
 org\appium\TestUtils\JsonUtils.class
-org\appium\TestUtils\DeviceManager.class
 org\appium\utilis\AppiumServerManager.class
 org\appium\TestUtils\BaseTest.class
-org\appium\TestUtils\BaseTest$1.class
+org\appium\TestUtils\JsonUtils$2.class
 org\appium\pageObjects\android\ProductCatalog.class
 org\appium\TestUtils\ExtentReportManager.class
 org\appium\utilis\CapabilitiesManager.class

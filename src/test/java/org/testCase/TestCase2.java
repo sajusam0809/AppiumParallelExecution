@@ -9,8 +9,8 @@ public class TestCase2 extends BaseTest {
 
     @Test
     public void SecondCase() throws InterruptedException {
-        System.out.println("Device: " + device.get("deviceName"));
-        // Add your test logic for device 2 here
+        //System.out.println("Device: " + device.get("deviceName"));
+        // Add your test logic
         Thread.sleep(5000);
         driver.findElement(AppiumBy.id("com.androidsample.generalstore:id/nameField")).sendKeys("Steve Smith");
         driver.hideKeyboard();

@@ -20,6 +20,11 @@ import java.util.Map;
             caps.setCapability("appActivity", device.get("appActivity"));
             caps.setCapability(MobileCapabilityType.NO_RESET, true);
 
+            // ✅ Important: Use systemPort for parallel runs
+            if (device.containsKey("systemPort")) {
+                caps.setCapability("systemPort", device.get("systemPort"));
+            }
+
             return caps;
         }
     }

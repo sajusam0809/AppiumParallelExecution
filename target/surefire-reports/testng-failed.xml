@@ -6,6 +6,7 @@
   </listeners>
   <test thread-count="2" parallel="tests" name="TestOnDevice1(failed)" verbose="0">
     <parameter name="deviceIndex" value="0"/>
+    <parameter name="formDataIndex" value="0"/>
     <classes>
       <class name="org.testCase.TestCase1">
         <methods>
@@ -14,13 +15,6 @@
           <include name="setUp"/>
         </methods>
       </class> <!-- org.testCase.TestCase1 -->
-      <class name="org.testCase.TestCase2">
-        <methods>
-          <include name="tearDown"/>
-          <include name="SecondCase"/>
-          <include name="setUp"/>
-        </methods>
-      </class> <!-- org.testCase.TestCase2 -->
     </classes>
   </test> <!-- TestOnDevice1(failed) -->
 </suite> <!-- Failed suite [AppiumParallelSuite] -->

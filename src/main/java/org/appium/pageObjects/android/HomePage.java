@@ -16,6 +16,7 @@ public class HomePage {
     // Locators
     private By nameField = AppiumBy.id("com.androidsample.generalstore:id/nameField");
     private By radioFemale = AppiumBy.id("com.androidsample.generalstore:id/radioFemale");
+    private By radioMale = AppiumBy.id("com.androidsample.generalstore:id/radioMale");
     private By countryDropdown = AppiumBy.id("android:id/text1");
     private By letsShopButton = AppiumBy.id("com.androidsample.generalstore:id/btnLetsShop");
 
@@ -27,6 +28,10 @@ public class HomePage {
 
     public void selectFemaleGender() {
         driver.findElement(radioFemale).click();
+    }
+
+    public void selectMaleGender() {
+        driver.findElement(radioMale).click();
     }
 
     public void selectCountry(String countryName) {

@@ -7,15 +7,17 @@ import org.testng.annotations.Test;
 public class TestCase3 extends BaseTest {
 
     @Test
-    public void SecondCase() throws InterruptedException {
-        System.out.println("Device: " + device.get("deviceName"));
+    public void ThirdCase() throws InterruptedException {
 
         HomePage homePage = new HomePage(driver);
-
         Thread.sleep(5000);
-        homePage.enterName("Steve Smith");
-        homePage.selectFemaleGender();
-        homePage.selectCountry("Argentina");
+        homePage.enterName(formData.name);
+        if ("Female".equalsIgnoreCase(formData.gender)) {
+            homePage.selectFemaleGender();
+        } else {
+            homePage.selectMaleGender();
+        }
+        homePage.selectCountry(formData.country);
         homePage.clickLetsShop();
 
         Thread.sleep(3000);
