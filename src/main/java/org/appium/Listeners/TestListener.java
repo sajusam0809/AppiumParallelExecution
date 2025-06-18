@@ -75,19 +75,20 @@ public class TestListener implements ITestListener, IInvokedMethodListener {
         int total = passedCount + failedCount + skippedCount;
 
         System.out.println("\n📊 Test Summary:");
-        System.out.println("✔  Passed:  " + passedCount);
-        System.out.println("✖  Failed:  " + failedCount);
-        System.out.println("➖ Skipped: " + skippedCount);
+        System.out.println("✅ Passed:  " + passedCount);
+        System.out.println("❌ Failed:  " + failedCount);
+        System.out.println("⚠️ Skipped: " + skippedCount);
         System.out.println("Σ  Total:   " + total);
 
         ExtentReportManager.getExtent()
                 .createTest("📊 Test Summary")
-                .info("✔  Passed:  " + passedCount)
-                .info("✖  Failed:  " + failedCount)
-                .info("➖ Skipped: " + skippedCount)
-                .info("Σ  Total:   " + total);
+                .info("✅  Passed:  " + passedCount)
+                .info("❌  Failed:  " + failedCount)
+                .info("⚠️  Skipped: " + skippedCount)
+                .info("Σ   Total:   " + total);
 
         ExtentReportManager.flush();
+        System.out.println("📝 Test Suite Finished: Report generated.");
     }
 
     private String captureScreenshot(ITestResult result) {

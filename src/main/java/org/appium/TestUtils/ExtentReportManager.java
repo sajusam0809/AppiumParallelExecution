@@ -22,6 +22,7 @@ public class ExtentReportManager {
         if (extent == null) {
             ExtentSparkReporter spark = new ExtentSparkReporter("test-output/ExtentReport.html");
 
+            spark.config().setEncoding("utf-8");
             spark.config().setTheme(Theme.STANDARD);
             spark.config().setDocumentTitle("📱 Appium Test Report");
             spark.config().setReportName("🚀 Parallel Execution Results");
