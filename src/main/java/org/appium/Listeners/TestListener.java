@@ -85,7 +85,7 @@ public class TestListener implements ITestListener, IInvokedMethodListener {
                 .info("✅  Passed:  " + passedCount)
                 .info("❌  Failed:  " + failedCount)
                 .info("⚠️  Skipped: " + skippedCount)
-                .info("Σ   Total:   " + total);
+                .info("Σ    Total:   " + total);
 
         ExtentReportManager.flush();
         System.out.println("📝 Test Suite Finished: Report generated.");
