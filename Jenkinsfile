@@ -32,17 +32,5 @@ pipeline {
                reportFiles: 'ExtentReport.html',
                reportName: 'Extent Test Report'
            ])
-
-           // Send email with report attached
-           emailext (
-               subject: "Jenkins Build #${env.BUILD_NUMBER} - Test Report",
-               body: """<p>Hi Team,</p>
-                        <p>The build #${env.BUILD_NUMBER} has completed.</p>
-                        <p>Check the test report attached or view it in Jenkins:</p>
-                        <p><a href="${env.BUILD_URL}Extent_20Test_20Report/">Extent Test Report</a></p>""",
-               to: "sajusam0809@gmail.com",
-               attachmentsPattern: 'test-output/ExtentReport.html',
-               mimeType: 'text/html'
-           )
        }
    }
