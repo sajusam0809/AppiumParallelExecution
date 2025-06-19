@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="6" passed="3" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-19T13:37:40 EDT" name="AppiumParallelSuite" finished-at="2025-06-19T13:39:34 EDT" duration-ms="113818">
+  <suite started-at="2025-06-19T14:03:35 EDT" name="AppiumParallelSuite" finished-at="2025-06-19T14:05:36 EDT" duration-ms="120947">
     <groups>
     </groups>
-    <test started-at="2025-06-19T13:37:40 EDT" name="TestOnDevice2" finished-at="2025-06-19T13:38:06 EDT" duration-ms="25551">
+    <test started-at="2025-06-19T14:03:35 EDT" name="TestOnDevice2" finished-at="2025-06-19T14:03:57 EDT" duration-ms="22019">
       <class name="org.testCase.TestCase1">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase1@14dc3f89]" started-at="2025-06-19T13:37:41 EDT" name="setUp" finished-at="2025-06-19T13:37:54 EDT" duration-ms="12802" status="FAIL">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase1@14dc3f89]" started-at="2025-06-19T14:03:35 EDT" name="setUp" finished-at="2025-06-19T14:03:44 EDT" duration-ms="8967" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -80,7 +80,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="FirstCase()[pri:0, instance:org.testCase.TestCase1@14dc3f89]" started-at="2025-06-19T13:37:54 EDT" name="FirstCase" finished-at="2025-06-19T13:37:54 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="FirstCase()[pri:0, instance:org.testCase.TestCase1@14dc3f89]" started-at="2025-06-19T14:03:45 EDT" name="FirstCase" finished-at="2025-06-19T14:03:45 EDT" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
@@ -141,13 +141,13 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FirstCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase1@14dc3f89]" started-at="2025-06-19T13:37:54 EDT" name="tearDown" finished-at="2025-06-19T13:37:54 EDT" duration-ms="76" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase1@14dc3f89]" started-at="2025-06-19T14:03:45 EDT" name="tearDown" finished-at="2025-06-19T14:03:45 EDT" duration-ms="74" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.testCase.TestCase1 -->
       <class name="org.testCase.TestCase3">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase3@64412d34]" started-at="2025-06-19T13:38:02 EDT" name="setUp" finished-at="2025-06-19T13:38:06 EDT" duration-ms="4040" status="FAIL">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase3@64412d34]" started-at="2025-06-19T14:03:52 EDT" name="setUp" finished-at="2025-06-19T14:03:57 EDT" duration-ms="4604" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -220,7 +220,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="ThirdCase()[pri:0, instance:org.testCase.TestCase3@64412d34]" started-at="2025-06-19T13:38:06 EDT" name="ThirdCase" finished-at="2025-06-19T13:38:06 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="ThirdCase()[pri:0, instance:org.testCase.TestCase3@64412d34]" started-at="2025-06-19T14:03:57 EDT" name="ThirdCase" finished-at="2025-06-19T14:03:57 EDT" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
@@ -281,13 +281,13 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ThirdCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase3@64412d34]" started-at="2025-06-19T13:38:06 EDT" name="tearDown" finished-at="2025-06-19T13:38:06 EDT" duration-ms="60" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase3@64412d34]" started-at="2025-06-19T14:03:57 EDT" name="tearDown" finished-at="2025-06-19T14:03:57 EDT" duration-ms="61" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.testCase.TestCase3 -->
       <class name="org.testCase.TestCase2">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase2@1706a5c9]" started-at="2025-06-19T13:37:54 EDT" name="setUp" finished-at="2025-06-19T13:38:01 EDT" duration-ms="7056" status="FAIL">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase2@1706a5c9]" started-at="2025-06-19T14:03:45 EDT" name="setUp" finished-at="2025-06-19T14:03:52 EDT" duration-ms="7109" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -360,7 +360,7 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="SecondCase()[pri:0, instance:org.testCase.TestCase2@1706a5c9]" started-at="2025-06-19T13:38:02 EDT" name="SecondCase" finished-at="2025-06-19T13:38:02 EDT" duration-ms="0" status="SKIP">
+        <test-method signature="SecondCase()[pri:0, instance:org.testCase.TestCase2@1706a5c9]" started-at="2025-06-19T14:03:52 EDT" name="SecondCase" finished-at="2025-06-19T14:03:52 EDT" duration-ms="0" status="SKIP">
           <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
               <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
@@ -421,15 +421,15 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SecondCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase2@1706a5c9]" started-at="2025-06-19T13:38:02 EDT" name="tearDown" finished-at="2025-06-19T13:38:02 EDT" duration-ms="59" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase2@1706a5c9]" started-at="2025-06-19T14:03:52 EDT" name="tearDown" finished-at="2025-06-19T14:03:52 EDT" duration-ms="68" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.testCase.TestCase2 -->
     </test> <!-- TestOnDevice2 -->
-    <test started-at="2025-06-19T13:37:40 EDT" name="TestOnDevice1" finished-at="2025-06-19T13:39:34 EDT" duration-ms="113818">
+    <test started-at="2025-06-19T14:03:35 EDT" name="TestOnDevice1" finished-at="2025-06-19T14:05:36 EDT" duration-ms="120947">
       <class name="org.testCase.TestCase1">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase1@5bcb04cb]" started-at="2025-06-19T13:37:41 EDT" name="setUp" finished-at="2025-06-19T13:38:00 EDT" duration-ms="19197" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase1@5bcb04cb]" started-at="2025-06-19T14:03:35 EDT" name="setUp" finished-at="2025-06-19T14:03:53 EDT" duration-ms="17161" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -445,17 +445,17 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="FirstCase()[pri:0, instance:org.testCase.TestCase1@5bcb04cb]" started-at="2025-06-19T13:38:00 EDT" name="FirstCase" finished-at="2025-06-19T13:38:11 EDT" duration-ms="11013" status="PASS">
+        <test-method signature="FirstCase()[pri:0, instance:org.testCase.TestCase1@5bcb04cb]" started-at="2025-06-19T14:03:53 EDT" name="FirstCase" finished-at="2025-06-19T14:04:04 EDT" duration-ms="11329" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FirstCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase1@5bcb04cb]" started-at="2025-06-19T13:38:12 EDT" name="tearDown" finished-at="2025-06-19T13:38:15 EDT" duration-ms="2668" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase1@5bcb04cb]" started-at="2025-06-19T14:04:05 EDT" name="tearDown" finished-at="2025-06-19T14:04:07 EDT" duration-ms="1642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.testCase.TestCase1 -->
       <class name="org.testCase.TestCase3">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase3@7de843ef]" started-at="2025-06-19T13:38:52 EDT" name="setUp" finished-at="2025-06-19T13:39:04 EDT" duration-ms="11607" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase3@7de843ef]" started-at="2025-06-19T14:04:43 EDT" name="setUp" finished-at="2025-06-19T14:05:02 EDT" duration-ms="19699" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -471,17 +471,17 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="ThirdCase()[pri:0, instance:org.testCase.TestCase3@7de843ef]" started-at="2025-06-19T13:39:04 EDT" name="ThirdCase" finished-at="2025-06-19T13:39:31 EDT" duration-ms="27369" status="PASS">
+        <test-method signature="ThirdCase()[pri:0, instance:org.testCase.TestCase3@7de843ef]" started-at="2025-06-19T14:05:02 EDT" name="ThirdCase" finished-at="2025-06-19T14:05:30 EDT" duration-ms="27902" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ThirdCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase3@7de843ef]" started-at="2025-06-19T13:39:32 EDT" name="tearDown" finished-at="2025-06-19T13:39:34 EDT" duration-ms="1801" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase3@7de843ef]" started-at="2025-06-19T14:05:31 EDT" name="tearDown" finished-at="2025-06-19T14:05:36 EDT" duration-ms="4141" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.testCase.TestCase3 -->
       <class name="org.testCase.TestCase2">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase2@58a63629]" started-at="2025-06-19T13:38:15 EDT" name="setUp" finished-at="2025-06-19T13:38:33 EDT" duration-ms="17518" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase2@58a63629]" started-at="2025-06-19T14:04:07 EDT" name="setUp" finished-at="2025-06-19T14:04:20 EDT" duration-ms="13474" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -497,11 +497,11 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="SecondCase()[pri:0, instance:org.testCase.TestCase2@58a63629]" started-at="2025-06-19T13:38:33 EDT" name="SecondCase" finished-at="2025-06-19T13:38:49 EDT" duration-ms="16399" status="PASS">
+        <test-method signature="SecondCase()[pri:0, instance:org.testCase.TestCase2@58a63629]" started-at="2025-06-19T14:04:20 EDT" name="SecondCase" finished-at="2025-06-19T14:04:38 EDT" duration-ms="18108" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SecondCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase2@58a63629]" started-at="2025-06-19T13:38:50 EDT" name="tearDown" finished-at="2025-06-19T13:38:52 EDT" duration-ms="1949" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase2@58a63629]" started-at="2025-06-19T14:04:40 EDT" name="tearDown" finished-at="2025-06-19T14:04:43 EDT" duration-ms="2873" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

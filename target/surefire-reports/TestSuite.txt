@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 3, Errors: 0, Skipped: 3, Time elapsed: 116.721 s <<< FAILURE! - in TestSuite
-org.testCase.TestCase1.setUp[1, 1](0)  Time elapsed: 16.669 s  <<< FAILURE!
+Tests run: 9, Failures: 3, Errors: 0, Skipped: 3, Time elapsed: 131.609 s <<< FAILURE! - in TestSuite
+org.testCase.TestCase1.setUp[1, 1](0)  Time elapsed: 13.075 s  <<< FAILURE!
 org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
 Host info: host: 'ELSA', ip: '192.168.2.20'
@@ -48,7 +48,7 @@ Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.andro
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 
-org.testCase.TestCase2.setUp[1, 1](0)  Time elapsed: 1.248 s  <<< FAILURE!
+org.testCase.TestCase2.setUp[1, 1](0)  Time elapsed: 8.522 s  <<< FAILURE!
 org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
 Host info: host: 'ELSA', ip: '192.168.2.20'
@@ -94,7 +94,7 @@ Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.andro
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
 
-org.testCase.TestCase3.setUp[1, 1](0)  Time elapsed: 4.116 s  <<< FAILURE!
+org.testCase.TestCase3.setUp[1, 1](0)  Time elapsed: 3.409 s  <<< FAILURE!
 org.openqa.selenium.SessionNotCreatedException: 
 Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
 Host info: host: 'ELSA', ip: '192.168.2.20'
