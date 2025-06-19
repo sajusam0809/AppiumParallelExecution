@@ -6,9 +6,9 @@ pipeline {
         jdk 'JDK_22'
     }
 
-    environment {
+/*     environment {
         PATH = "C:\\Users\\JenkinsUser\\AppData\\Roaming\\npm;%PATH%"
-    }
+    } */
 
     stages {
         stage('Checkout Code') {
@@ -17,7 +17,7 @@ pipeline {
             }
         }
 
-        stage('Setup Appium') {
+  /*       stage('Setup Appium') {
             steps {
                 bat '''
                 echo Setting up PATH...
@@ -33,7 +33,7 @@ pipeline {
                 appium driver list --installed
                 '''
             }
-        }
+        } */
 
         stage('Run Tests') {
             steps {
