@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="6" passed="4" failed="2" skipped="0">
+<testng-results ignored="0" total="6" passed="3" failed="0" skipped="3">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-18T16:27:25 EDT" name="AppiumParallelSuite" finished-at="2025-06-18T16:29:02 EDT" duration-ms="97279">
+  <suite started-at="2025-06-19T13:37:40 EDT" name="AppiumParallelSuite" finished-at="2025-06-19T13:39:34 EDT" duration-ms="113818">
     <groups>
     </groups>
-    <test started-at="2025-06-18T16:27:25 EDT" name="TestOnDevice2" finished-at="2025-06-18T16:28:55 EDT" duration-ms="89724">
+    <test started-at="2025-06-19T13:37:40 EDT" name="TestOnDevice2" finished-at="2025-06-19T13:38:06 EDT" duration-ms="25551">
       <class name="org.testCase.TestCase1">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase1@7a8136b3]" started-at="2025-06-18T16:27:26 EDT" name="setUp" finished-at="2025-06-18T16:27:43 EDT" duration-ms="16881" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase1@14dc3f89]" started-at="2025-06-19T13:37:41 EDT" name="setUp" finished-at="2025-06-19T13:37:54 EDT" duration-ms="12802" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -20,35 +20,50 @@
               </value>
             </param>
           </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUp -->
-        <test-method signature="FirstCase()[pri:0, instance:org.testCase.TestCase1@7a8136b3]" started-at="2025-06-18T16:27:43 EDT" name="FirstCase" finished-at="2025-06-18T16:27:51 EDT" duration-ms="8355" status="FAIL">
-          <exception class="java.lang.AssertionError">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
             <message>
-              <![CDATA[expected [Please enter your name2] but found [Please enter your name]]]>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
+Host info: host: 'ELSA', ip: '192.168.2.20'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.26'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.androidsample.generalstore.SplashActivity, appium:appPackage=com.androidsample.generalstore, appium:automationName=UiAutomator2, appium:deviceName=Samsung_Galaxy_S21, appium:noReset=true, platformName=ANDROID, appium:platformVersion=10.0, appium:systemPort=8201, appium:udid=R3CRC00KHBT}], desiredCapabilities=Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}}]
+Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Please enter your name2] but found [Please enter your name]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at org.testCase.TestCase1.FirstCase(TestCase1.java:25)
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
+Host info: host: 'ELSA', ip: '192.168.2.20'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.26'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.androidsample.generalstore.SplashActivity, appium:appPackage=com.androidsample.generalstore, appium:automationName=UiAutomator2, appium:deviceName=Samsung_Galaxy_S21, appium:noReset=true, platformName=ANDROID, appium:platformVersion=10.0, appium:systemPort=8201, appium:udid=R3CRC00KHBT}], desiredCapabilities=Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}}]
+Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at org.appium.TestUtils.BaseTest.setUp(BaseTest.java:45)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
 at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 at org.testng.TestRunner.privateRun(TestRunner.java:741)
 at org.testng.TestRunner.run(TestRunner.java:616)
@@ -61,17 +76,78 @@ at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecut
 at java.base/java.lang.Thread.run(Thread.java:834)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="FirstCase()[pri:0, instance:org.testCase.TestCase1@14dc3f89]" started-at="2025-06-19T13:37:54 EDT" name="FirstCase" finished-at="2025-06-19T13:37:54 EDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
+Host info: host: 'ELSA', ip: '192.168.2.20'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.26'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.androidsample.generalstore.SplashActivity, appium:appPackage=com.androidsample.generalstore, appium:automationName=UiAutomator2, appium:deviceName=Samsung_Galaxy_S21, appium:noReset=true, platformName=ANDROID, appium:platformVersion=10.0, appium:systemPort=8201, appium:udid=R3CRC00KHBT}], desiredCapabilities=Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}}]
+Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
+Host info: host: 'ELSA', ip: '192.168.2.20'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.26'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.androidsample.generalstore.SplashActivity, appium:appPackage=com.androidsample.generalstore, appium:automationName=UiAutomator2, appium:deviceName=Samsung_Galaxy_S21, appium:noReset=true, platformName=ANDROID, appium:platformVersion=10.0, appium:systemPort=8201, appium:udid=R3CRC00KHBT}], desiredCapabilities=Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}}]
+Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at org.appium.TestUtils.BaseTest.setUp(BaseTest.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FirstCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase1@7a8136b3]" started-at="2025-06-18T16:27:52 EDT" name="tearDown" finished-at="2025-06-18T16:27:54 EDT" duration-ms="1752" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase1@14dc3f89]" started-at="2025-06-19T13:37:54 EDT" name="tearDown" finished-at="2025-06-19T13:37:54 EDT" duration-ms="76" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.testCase.TestCase1 -->
       <class name="org.testCase.TestCase3">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase3@14dc3f89]" started-at="2025-06-18T16:28:22 EDT" name="setUp" finished-at="2025-06-18T16:28:33 EDT" duration-ms="10904" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase3@64412d34]" started-at="2025-06-19T13:38:02 EDT" name="setUp" finished-at="2025-06-19T13:38:06 EDT" duration-ms="4040" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -84,20 +160,134 @@ at java.base/java.lang.Thread.run(Thread.java:834)
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
+Host info: host: 'ELSA', ip: '192.168.2.20'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.26'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.androidsample.generalstore.SplashActivity, appium:appPackage=com.androidsample.generalstore, appium:automationName=UiAutomator2, appium:deviceName=Samsung_Galaxy_S21, appium:noReset=true, platformName=ANDROID, appium:platformVersion=10.0, appium:systemPort=8201, appium:udid=R3CRC00KHBT}], desiredCapabilities=Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}}]
+Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
+Host info: host: 'ELSA', ip: '192.168.2.20'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.26'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.androidsample.generalstore.SplashActivity, appium:appPackage=com.androidsample.generalstore, appium:automationName=UiAutomator2, appium:deviceName=Samsung_Galaxy_S21, appium:noReset=true, platformName=ANDROID, appium:platformVersion=10.0, appium:systemPort=8201, appium:udid=R3CRC00KHBT}], desiredCapabilities=Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}}]
+Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at org.appium.TestUtils.BaseTest.setUp(BaseTest.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="ThirdCase()[pri:0, instance:org.testCase.TestCase3@14dc3f89]" started-at="2025-06-18T16:28:33 EDT" name="ThirdCase" finished-at="2025-06-18T16:28:53 EDT" duration-ms="19238" status="PASS">
+        <test-method signature="ThirdCase()[pri:0, instance:org.testCase.TestCase3@64412d34]" started-at="2025-06-19T13:38:06 EDT" name="ThirdCase" finished-at="2025-06-19T13:38:06 EDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
+Host info: host: 'ELSA', ip: '192.168.2.20'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.26'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.androidsample.generalstore.SplashActivity, appium:appPackage=com.androidsample.generalstore, appium:automationName=UiAutomator2, appium:deviceName=Samsung_Galaxy_S21, appium:noReset=true, platformName=ANDROID, appium:platformVersion=10.0, appium:systemPort=8201, appium:udid=R3CRC00KHBT}], desiredCapabilities=Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}}]
+Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
+Host info: host: 'ELSA', ip: '192.168.2.20'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.26'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.androidsample.generalstore.SplashActivity, appium:appPackage=com.androidsample.generalstore, appium:automationName=UiAutomator2, appium:deviceName=Samsung_Galaxy_S21, appium:noReset=true, platformName=ANDROID, appium:platformVersion=10.0, appium:systemPort=8201, appium:udid=R3CRC00KHBT}], desiredCapabilities=Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}}]
+Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at org.appium.TestUtils.BaseTest.setUp(BaseTest.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ThirdCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase3@14dc3f89]" started-at="2025-06-18T16:28:53 EDT" name="tearDown" finished-at="2025-06-18T16:28:55 EDT" duration-ms="1840" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase3@64412d34]" started-at="2025-06-19T13:38:06 EDT" name="tearDown" finished-at="2025-06-19T13:38:06 EDT" duration-ms="60" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.testCase.TestCase3 -->
       <class name="org.testCase.TestCase2">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase2@1de6932a]" started-at="2025-06-18T16:27:54 EDT" name="setUp" finished-at="2025-06-18T16:28:04 EDT" duration-ms="10321" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase2@1706a5c9]" started-at="2025-06-19T13:37:54 EDT" name="setUp" finished-at="2025-06-19T13:38:01 EDT" duration-ms="7056" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -110,22 +300,136 @@ at java.base/java.lang.Thread.run(Thread.java:834)
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
+Host info: host: 'ELSA', ip: '192.168.2.20'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.26'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.androidsample.generalstore.SplashActivity, appium:appPackage=com.androidsample.generalstore, appium:automationName=UiAutomator2, appium:deviceName=Samsung_Galaxy_S21, appium:noReset=true, platformName=ANDROID, appium:platformVersion=10.0, appium:systemPort=8201, appium:udid=R3CRC00KHBT}], desiredCapabilities=Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}}]
+Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
+Host info: host: 'ELSA', ip: '192.168.2.20'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.26'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.androidsample.generalstore.SplashActivity, appium:appPackage=com.androidsample.generalstore, appium:automationName=UiAutomator2, appium:deviceName=Samsung_Galaxy_S21, appium:noReset=true, platformName=ANDROID, appium:platformVersion=10.0, appium:systemPort=8201, appium:udid=R3CRC00KHBT}], desiredCapabilities=Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}}]
+Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at org.appium.TestUtils.BaseTest.setUp(BaseTest.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="SecondCase()[pri:0, instance:org.testCase.TestCase2@1de6932a]" started-at="2025-06-18T16:28:04 EDT" name="SecondCase" finished-at="2025-06-18T16:28:19 EDT" duration-ms="15223" status="PASS">
+        <test-method signature="SecondCase()[pri:0, instance:org.testCase.TestCase2@1706a5c9]" started-at="2025-06-19T13:38:02 EDT" name="SecondCase" finished-at="2025-06-19T13:38:02 EDT" duration-ms="0" status="SKIP">
+          <exception class="org.openqa.selenium.SessionNotCreatedException">
+            <message>
+              <![CDATA[Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
+Host info: host: 'ELSA', ip: '192.168.2.20'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.26'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.androidsample.generalstore.SplashActivity, appium:appPackage=com.androidsample.generalstore, appium:automationName=UiAutomator2, appium:deviceName=Samsung_Galaxy_S21, appium:noReset=true, platformName=ANDROID, appium:platformVersion=10.0, appium:systemPort=8201, appium:udid=R3CRC00KHBT}], desiredCapabilities=Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}}]
+Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
+Host info: host: 'ELSA', ip: '192.168.2.20'
+Build info: version: '4.33.0', revision: '2c6aaad03a'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.26'
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.androidsample.generalstore.SplashActivity, appium:appPackage=com.androidsample.generalstore, appium:automationName=UiAutomator2, appium:deviceName=Samsung_Galaxy_S21, appium:noReset=true, platformName=ANDROID, appium:platformVersion=10.0, appium:systemPort=8201, appium:udid=R3CRC00KHBT}], desiredCapabilities=Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}}]
+Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}
+at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:163)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:89)
+at io.appium.java_client.AppiumDriver.<init>(AppiumDriver.java:101)
+at io.appium.java_client.android.AndroidDriver.<init>(AndroidDriver.java:113)
+at org.appium.TestUtils.BaseTest.setUp(BaseTest.java:45)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:71)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:400)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:333)
+at org.testng.internal.invokers.TestMethodWorker.invokeBeforeClassMethods(TestMethodWorker.java:188)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+at java.base/java.lang.Thread.run(Thread.java:834)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.SessionNotCreatedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SecondCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase2@1de6932a]" started-at="2025-06-18T16:28:20 EDT" name="tearDown" finished-at="2025-06-18T16:28:22 EDT" duration-ms="2166" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase2@1706a5c9]" started-at="2025-06-19T13:38:02 EDT" name="tearDown" finished-at="2025-06-19T13:38:02 EDT" duration-ms="59" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.testCase.TestCase2 -->
     </test> <!-- TestOnDevice2 -->
-    <test started-at="2025-06-18T16:27:25 EDT" name="TestOnDevice1" finished-at="2025-06-18T16:29:02 EDT" duration-ms="97279">
+    <test started-at="2025-06-19T13:37:40 EDT" name="TestOnDevice1" finished-at="2025-06-19T13:39:34 EDT" duration-ms="113818">
       <class name="org.testCase.TestCase1">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase1@5b498842]" started-at="2025-06-18T16:27:26 EDT" name="setUp" finished-at="2025-06-18T16:27:43 EDT" duration-ms="16881" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase1@5bcb04cb]" started-at="2025-06-19T13:37:41 EDT" name="setUp" finished-at="2025-06-19T13:38:00 EDT" duration-ms="19197" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -141,55 +445,17 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="FirstCase()[pri:0, instance:org.testCase.TestCase1@5b498842]" started-at="2025-06-18T16:27:43 EDT" name="FirstCase" finished-at="2025-06-18T16:27:54 EDT" duration-ms="10504" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [Please enter your name2] but found [Please enter your name]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Please enter your name2] but found [Please enter your name]
-at org.testng.Assert.fail(Assert.java:111)
-at org.testng.Assert.failNotEquals(Assert.java:1590)
-at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-at org.testng.Assert.assertEquals(Assert.java:132)
-at org.testng.Assert.assertEquals(Assert.java:656)
-at org.testng.Assert.assertEquals(Assert.java:666)
-at org.testCase.TestCase1.FirstCase(TestCase1.java:25)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
-at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
-at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
-at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
-at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
-at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
-at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
-at org.testng.TestRunner.privateRun(TestRunner.java:741)
-at org.testng.TestRunner.run(TestRunner.java:616)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
-at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:463)
-at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:64)
-at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-at java.base/java.lang.Thread.run(Thread.java:834)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="FirstCase()[pri:0, instance:org.testCase.TestCase1@5bcb04cb]" started-at="2025-06-19T13:38:00 EDT" name="FirstCase" finished-at="2025-06-19T13:38:11 EDT" duration-ms="11013" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- FirstCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase1@5b498842]" started-at="2025-06-18T16:27:55 EDT" name="tearDown" finished-at="2025-06-18T16:27:56 EDT" duration-ms="1649" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase1@5bcb04cb]" started-at="2025-06-19T13:38:12 EDT" name="tearDown" finished-at="2025-06-19T13:38:15 EDT" duration-ms="2668" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.testCase.TestCase1 -->
       <class name="org.testCase.TestCase3">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase3@62ce72ff]" started-at="2025-06-18T16:28:25 EDT" name="setUp" finished-at="2025-06-18T16:28:35 EDT" duration-ms="10082" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase3@7de843ef]" started-at="2025-06-19T13:38:52 EDT" name="setUp" finished-at="2025-06-19T13:39:04 EDT" duration-ms="11607" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -205,17 +471,17 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="ThirdCase()[pri:0, instance:org.testCase.TestCase3@62ce72ff]" started-at="2025-06-18T16:28:35 EDT" name="ThirdCase" finished-at="2025-06-18T16:29:00 EDT" duration-ms="24591" status="PASS">
+        <test-method signature="ThirdCase()[pri:0, instance:org.testCase.TestCase3@7de843ef]" started-at="2025-06-19T13:39:04 EDT" name="ThirdCase" finished-at="2025-06-19T13:39:31 EDT" duration-ms="27369" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ThirdCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase3@62ce72ff]" started-at="2025-06-18T16:29:01 EDT" name="tearDown" finished-at="2025-06-18T16:29:02 EDT" duration-ms="1686" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase3@7de843ef]" started-at="2025-06-19T13:39:32 EDT" name="tearDown" finished-at="2025-06-19T13:39:34 EDT" duration-ms="1801" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- org.testCase.TestCase3 -->
       <class name="org.testCase.TestCase2">
-        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase2@2bef09c0]" started-at="2025-06-18T16:27:56 EDT" name="setUp" finished-at="2025-06-18T16:28:06 EDT" duration-ms="10191" status="PASS">
+        <test-method is-config="true" signature="setUp(java.lang.String,java.lang.String)[pri:0, instance:org.testCase.TestCase2@58a63629]" started-at="2025-06-19T13:38:15 EDT" name="setUp" finished-at="2025-06-19T13:38:33 EDT" duration-ms="17518" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -231,11 +497,11 @@ at java.base/java.lang.Thread.run(Thread.java:834)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="SecondCase()[pri:0, instance:org.testCase.TestCase2@2bef09c0]" started-at="2025-06-18T16:28:06 EDT" name="SecondCase" finished-at="2025-06-18T16:28:23 EDT" duration-ms="16215" status="PASS">
+        <test-method signature="SecondCase()[pri:0, instance:org.testCase.TestCase2@58a63629]" started-at="2025-06-19T13:38:33 EDT" name="SecondCase" finished-at="2025-06-19T13:38:49 EDT" duration-ms="16399" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SecondCase -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase2@2bef09c0]" started-at="2025-06-18T16:28:24 EDT" name="tearDown" finished-at="2025-06-18T16:28:25 EDT" duration-ms="1645" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:org.testCase.TestCase2@58a63629]" started-at="2025-06-19T13:38:50 EDT" name="tearDown" finished-at="2025-06-19T13:38:52 EDT" duration-ms="1949" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

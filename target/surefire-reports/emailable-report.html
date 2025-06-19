@@ -9,32 +9,165 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">AppiumParallelSuite</th></tr>
-<tr><td><a href="#t0">TestOnDevice2</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">89,724</td><td></td><td></td></tr>
-<tr class="stripe"><td><a href="#t1">TestOnDevice1</a></td><td class="num">2</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">97,279</td><td></td><td></td></tr>
-<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num">0</th><th class="num attn">2</th><th class="num">187,003</th><th colspan="2"></th></tr>
+<tr><td><a href="#t0">TestOnDevice2</a></td><td class="num">0</td><td class="num attn">3</td><td class="num">0</td><td class="num">0</td><td class="num">25,551</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">TestOnDevice1</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">113,818</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">3</th><th class="num attn">3</th><th class="num">0</th><th class="num">0</th><th class="num">139,369</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">AppiumParallelSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestOnDevice2 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">org.testCase.TestCase1</td><td><a href="#m0">FirstCase</a></td><td rowspan="1">1750278463528</td><td rowspan="1">8355</td></tr><tr><th colspan="4">TestOnDevice2 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.testCase.TestCase2</td><td><a href="#m1">SecondCase</a></td><td rowspan="1">1750278484708</td><td rowspan="1">15223</td></tr><tr class="passedodd"><td rowspan="1">org.testCase.TestCase3</td><td><a href="#m2">ThirdCase</a></td><td rowspan="1">1750278513809</td><td rowspan="1">19238</td></tr></tbody>
-<tbody id="t1"><tr><th colspan="4">TestOnDevice1 &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">org.testCase.TestCase1</td><td><a href="#m3">FirstCase</a></td><td rowspan="1">1750278463528</td><td rowspan="1">10504</td></tr><tr><th colspan="4">TestOnDevice1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.testCase.TestCase2</td><td><a href="#m4">SecondCase</a></td><td rowspan="1">1750278486951</td><td rowspan="1">16215</td></tr><tr class="passedodd"><td rowspan="1">org.testCase.TestCase3</td><td><a href="#m5">ThirdCase</a></td><td rowspan="1">1750278515766</td><td rowspan="1">24591</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">AppiumParallelSuite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">TestOnDevice2 &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">org.testCase.TestCase1</td><td><a href="#m0">setUp</a></td><td rowspan="1">1750354661556</td><td rowspan="1">12802</td></tr><tr class="failedodd"><td rowspan="1">org.testCase.TestCase2</td><td><a href="#m1">setUp</a></td><td rowspan="1">1750354674932</td><td rowspan="1">7056</td></tr><tr class="failedeven"><td rowspan="1">org.testCase.TestCase3</td><td><a href="#m2">setUp</a></td><td rowspan="1">1750354682071</td><td rowspan="1">4040</td></tr><tr><th colspan="4">TestOnDevice2 &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">org.testCase.TestCase1</td><td><a href="#m3">FirstCase</a></td><td rowspan="1">1750354674798</td><td rowspan="1">0</td></tr><tr class="skippedodd"><td rowspan="1">org.testCase.TestCase2</td><td><a href="#m4">SecondCase</a></td><td rowspan="1">1750354682000</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td rowspan="1">org.testCase.TestCase3</td><td><a href="#m5">ThirdCase</a></td><td rowspan="1">1750354686120</td><td rowspan="1">0</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">TestOnDevice1 &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.testCase.TestCase1</td><td><a href="#m6">FirstCase</a></td><td rowspan="1">1750354680755</td><td rowspan="1">11013</td></tr><tr class="passedodd"><td rowspan="1">org.testCase.TestCase2</td><td><a href="#m7">SecondCase</a></td><td rowspan="1">1750354713173</td><td rowspan="1">16399</td></tr><tr class="passedeven"><td rowspan="1">org.testCase.TestCase3</td><td><a href="#m8">ThirdCase</a></td><td rowspan="1">1750354744345</td><td rowspan="1">27369</td></tr></tbody>
 </table>
-<h2>TestOnDevice2</h2><h3 id="m0">org.testCase.TestCase1#FirstCase</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Please enter your name2] but found [Please enter your name]
-	at org.testCase.TestCase1.FirstCase(TestCase1.java:25)
+<h2>TestOnDevice2</h2><h3 id="m0">org.testCase.TestCase1#setUp</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>1</td><td>1</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
+Host info: host: &apos;ELSA&apos;, ip: &apos;192.168.2.20&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.26&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.androidsample.generalstore.SplashActivity, appium:appPackage=com.androidsample.generalstore, appium:automationName=UiAutomator2, appium:deviceName=Samsung_Galaxy_S21, appium:noReset=true, platformName=ANDROID, appium:platformVersion=10.0, appium:systemPort=8201, appium:udid=R3CRC00KHBT}], desiredCapabilities=Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}}]
+Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at org.appium.TestUtils.BaseTest.setUp(BaseTest.java:45)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">org.testCase.TestCase2#SecondCase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">org.testCase.TestCase3#ThirdCase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h2>TestOnDevice1</h2><h3 id="m3">org.testCase.TestCase1#FirstCase</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Please enter your name2] but found [Please enter your name]
-	at org.testCase.TestCase1.FirstCase(TestCase1.java:25)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">org.testCase.TestCase2#setUp</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>1</td><td>1</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
+Host info: host: &apos;ELSA&apos;, ip: &apos;192.168.2.20&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.26&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.androidsample.generalstore.SplashActivity, appium:appPackage=com.androidsample.generalstore, appium:automationName=UiAutomator2, appium:deviceName=Samsung_Galaxy_S21, appium:noReset=true, platformName=ANDROID, appium:platformVersion=10.0, appium:systemPort=8201, appium:udid=R3CRC00KHBT}], desiredCapabilities=Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}}]
+Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at org.appium.TestUtils.BaseTest.setUp(BaseTest.java:45)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:834)
-... Removed 23 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">org.testCase.TestCase2#SecondCase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m5">org.testCase.TestCase3#ThirdCase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">org.testCase.TestCase3#setUp</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>1</td><td>1</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
+Host info: host: &apos;ELSA&apos;, ip: &apos;192.168.2.20&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.26&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.androidsample.generalstore.SplashActivity, appium:appPackage=com.androidsample.generalstore, appium:automationName=UiAutomator2, appium:deviceName=Samsung_Galaxy_S21, appium:noReset=true, platformName=ANDROID, appium:platformVersion=10.0, appium:systemPort=8201, appium:udid=R3CRC00KHBT}], desiredCapabilities=Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}}]
+Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at org.appium.TestUtils.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">org.testCase.TestCase1#FirstCase</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
+Host info: host: &apos;ELSA&apos;, ip: &apos;192.168.2.20&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.26&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.androidsample.generalstore.SplashActivity, appium:appPackage=com.androidsample.generalstore, appium:automationName=UiAutomator2, appium:deviceName=Samsung_Galaxy_S21, appium:noReset=true, platformName=ANDROID, appium:platformVersion=10.0, appium:systemPort=8201, appium:udid=R3CRC00KHBT}], desiredCapabilities=Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}}]
+Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at org.appium.TestUtils.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">org.testCase.TestCase2#SecondCase</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
+Host info: host: &apos;ELSA&apos;, ip: &apos;192.168.2.20&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.26&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.androidsample.generalstore.SplashActivity, appium:appPackage=com.androidsample.generalstore, appium:automationName=UiAutomator2, appium:deviceName=Samsung_Galaxy_S21, appium:noReset=true, platformName=ANDROID, appium:platformVersion=10.0, appium:systemPort=8201, appium:udid=R3CRC00KHBT}], desiredCapabilities=Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}}]
+Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at org.appium.TestUtils.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">org.testCase.TestCase3#ThirdCase</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: Could not start a new session. Response code 500. Message: An unknown server-side error occurred while processing the command. Original error: Device R3CRC00KHBT was not in the list of connected devices 
+Host info: host: &apos;ELSA&apos;, ip: &apos;192.168.2.20&apos;
+Build info: version: &apos;4.33.0&apos;, revision: &apos;2c6aaad03a&apos;
+System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.26&apos;
+Driver info: io.appium.java_client.android.AndroidDriver
+Command: [null, newSession {capabilities=[{appium:appActivity=com.androidsample.generalstore.SplashActivity, appium:appPackage=com.androidsample.generalstore, appium:automationName=UiAutomator2, appium:deviceName=Samsung_Galaxy_S21, appium:noReset=true, platformName=ANDROID, appium:platformVersion=10.0, appium:systemPort=8201, appium:udid=R3CRC00KHBT}], desiredCapabilities=Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}}]
+Capabilities {appActivity: com.androidsample.generalst..., appPackage: com.androidsample.generalstore, automationName: UiAutomator2, deviceName: Samsung_Galaxy_S21, noReset: true, platformName: ANDROID, platformVersion: 10.0, systemPort: 8201, udid: R3CRC00KHBT}
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:140)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:133)
+	at io.appium.java_client.remote.AppiumProtocolHandshake.createSession(AppiumProtocolHandshake.java:102)
+	at io.appium.java_client.remote.AppiumCommandExecutor.createSession(AppiumCommandExecutor.java:182)
+	at io.appium.java_client.remote.AppiumCommandExecutor.execute(AppiumCommandExecutor.java:250)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
+	at io.appium.java_client.AppiumDriver.startSession(AppiumDriver.java:274)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:163)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:89)
+	at io.appium.java_client.AppiumDriver.&lt;init&gt;(AppiumDriver.java:101)
+	at io.appium.java_client.android.AndroidDriver.&lt;init&gt;(AndroidDriver.java:113)
+	at org.appium.TestUtils.BaseTest.setUp(BaseTest.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:834)
+... Removed 19 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>TestOnDevice1</h2><h3 id="m6">org.testCase.TestCase1#FirstCase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">org.testCase.TestCase2#SecondCase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">org.testCase.TestCase3#ThirdCase</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

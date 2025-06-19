@@ -11,7 +11,7 @@ public class AppiumServerManager {
     public void startServer(int port) {
         service = new AppiumServiceBuilder()
                 .usingPort(port)
-                .withAppiumJS(new File("C://Users//sajus//AppData//Roaming//npm//node_modules//appium//build//lib//main.js"))
+                .withAppiumJS(new File("C://Users//JenkinsUser//AppData//Roaming//npm//node_modules//appium//build//lib//main.js"))
                 .build();
         service.start();
         System.out.println("Appium server started on port: " + port);

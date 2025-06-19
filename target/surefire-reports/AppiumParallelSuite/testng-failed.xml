@@ -16,19 +16,20 @@
           <include name="FirstCase"/>
         </methods>
       </class> <!-- org.testCase.TestCase1 -->
-    </classes>
-  </test> <!-- TestOnDevice2(failed) -->
-  <test thread-count="2" parallel="tests" name="TestOnDevice1(failed)" verbose="0">
-    <parameter name="deviceIndex" value="0"/>
-    <parameter name="formDataIndex" value="0"/>
-    <classes>
-      <class name="org.testCase.TestCase1">
+      <class name="org.testCase.TestCase2">
         <methods>
           <include name="tearDown"/>
           <include name="setUp"/>
-          <include name="FirstCase"/>
+          <include name="SecondCase"/>
         </methods>
-      </class> <!-- org.testCase.TestCase1 -->
+      </class> <!-- org.testCase.TestCase2 -->
+      <class name="org.testCase.TestCase3">
+        <methods>
+          <include name="ThirdCase"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- org.testCase.TestCase3 -->
     </classes>
-  </test> <!-- TestOnDevice1(failed) -->
+  </test> <!-- TestOnDevice2(failed) -->
 </suite> <!-- Failed suite [AppiumParallelSuite] -->
