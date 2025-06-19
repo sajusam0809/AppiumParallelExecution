@@ -7,7 +7,6 @@ pipeline {
     }
 
     environment {
-        // Set npm global bin to PATH (for appium, node, etc.)
         PATH = "C:\\Users\\JenkinsUser\\AppData\\Roaming\\npm;%PATH%"
     }
 
@@ -21,9 +20,16 @@ pipeline {
         stage('Setup Appium') {
             steps {
                 bat '''
-                echo Installing Appium and UiAutomator2 driver...
+                echo Setting up PATH...
+                set PATH=C:\\Users\\JenkinsUser\\AppData\\Roaming\\npm;%PATH%
+
+                echo Installing Appium...
                 npm install -g appium
+
+                echo Installing UiAutomator2...
                 appium driver install uiautomator2
+
+                echo Installed drivers:
                 appium driver list --installed
                 '''
             }
@@ -49,7 +55,6 @@ pipeline {
                 reportName: 'Extent Test Report'
             ])
 
-            // Allure Report
             allure includeProperties: false, jdk: '', results: [[path: 'target/allure-results']]
         }
     }
