@@ -12,15 +12,15 @@
       <class name="org.testCase.TestCase1">
         <methods>
           <include name="tearDown"/>
-          <include name="setUp"/>
           <include name="FirstCase"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- org.testCase.TestCase1 -->
       <class name="org.testCase.TestCase2">
         <methods>
           <include name="tearDown"/>
-          <include name="setUp"/>
           <include name="SecondCase"/>
+          <include name="setUp"/>
         </methods>
       </class> <!-- org.testCase.TestCase2 -->
       <class name="org.testCase.TestCase3">
