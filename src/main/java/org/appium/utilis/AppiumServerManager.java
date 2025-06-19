@@ -9,15 +9,15 @@ public class AppiumServerManager {
     private AppiumDriverLocalService service;
 
     public void startServer(int port) {
-/*        service = new AppiumServiceBuilder()
+        service = new AppiumServiceBuilder()
                 .usingPort(port)
                 .withAppiumJS(new File("C://Users//JenkinsUser//AppData//Roaming//npm//node_modules//appium//build//lib//main.js"))
                 .build();
         service.start();
         System.out.println("Appium server started on port: " + port);
-    }*/
 
-        File nodeExecutable = new File("C://Program Files//nodejs//node.exe");
+
+        /*File nodeExecutable = new File("C://Program Files//nodejs//node.exe");
         // ✅ Full path to Appium main.js
         File appiumMainJs = new File("C://Users//JenkinsUser//AppData//Roaming//npm//node_modules//appium//build//lib//main.js");
 
@@ -27,7 +27,7 @@ public class AppiumServerManager {
                 .usingPort(port);
 
         service = AppiumDriverLocalService.buildService(builder);
-        service.start();
+        service.start();*/
     }
     public void stopServer() {
         if (service != null && service.isRunning()) {
